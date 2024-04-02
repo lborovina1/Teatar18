@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Teatar18.props" />
+</Project>
