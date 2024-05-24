@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\OOAD\\Teatar18_2\\",
+  "WorkspaceRootPath": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\documents\\cetvrti semestar\\ooad\\teatar18_2\\teatar18_2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\esmak_4nlq9kx\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\OOAD\\Teatar18_2\\Teatar18_2\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Teatar18_2\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\OOAD\\Teatar18_2\\Teatar18_2\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Teatar18_2\\Views\\Home\\Index.cshtml",
+              "Title": "Korisnik.cs",
+              "DocumentMoniker": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Korisnik.cs",
+              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Korisnik.cs",
+              "ToolTip": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Korisnik.cs",
+              "RelativeToolTip": "Teatar18_2\\Models\\Korisnik.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-14T13:26:08.748Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T14:56:22.669Z",
               "EditorCaption": ""
             }
           ]
