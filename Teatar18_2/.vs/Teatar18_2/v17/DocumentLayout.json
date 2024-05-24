@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\documents\\cetvrti semestar\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\izvedba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\izvedba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\documents\\cetvrti semestar\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\rezervacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\rezervacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\documents\\cetvrti semestar\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\izvedba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\izvedba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\documents\\cetvrti semestar\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\predstava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Rezervacija.cs",
               "DocumentMoniker": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Rezervacija.cs",
               "RelativeDocumentMoniker": "Teatar18_2\\Models\\Rezervacija.cs",
               "ToolTip": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Rezervacija.cs",
               "RelativeToolTip": "Teatar18_2\\Models\\Rezervacija.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T21:22:21.28Z",
               "EditorCaption": ""
@@ -59,17 +59,18 @@
               "RelativeToolTip": "Teatar18_2\\Models\\Korisnik.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:14:44.407Z"
+              "WhenOpened": "2024-05-24T21:14:44.407Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Izvedba.cs",
               "DocumentMoniker": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Izvedba.cs",
               "RelativeDocumentMoniker": "Teatar18_2\\Models\\Izvedba.cs",
               "ToolTip": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Izvedba.cs",
               "RelativeToolTip": "Teatar18_2\\Models\\Izvedba.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T21:14:13.787Z",
               "EditorCaption": ""
@@ -94,7 +95,7 @@
               "RelativeDocumentMoniker": "Teatar18_2\\Models\\Predstava.cs",
               "ToolTip": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Predstava.cs",
               "RelativeToolTip": "Teatar18_2\\Models\\Predstava.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T20:57:44.715Z",
               "EditorCaption": ""
