@@ -4552,19 +4552,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\esmak_4nlq9kx\\.nuget\\packages\\": {}
+    "C:\\Users\\Korisnik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
+      "projectUniqueName": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
       "projectName": "Teatar18_2",
-      "projectPath": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
-      "packagesPath": "C:\\Users\\esmak_4nlq9kx\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\obj\\",
+      "projectPath": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
+      "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\esmak_4nlq9kx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4635,7 +4635,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
