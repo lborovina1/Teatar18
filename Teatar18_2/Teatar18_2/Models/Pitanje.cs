@@ -14,7 +14,7 @@ namespace Teatar18_2.Models
         public bool odgovoreno { get; set; }
         public DateTime? datumOdgovora { get; set; }
         [ForeignKey(nameof(Zaposlenik))] public int? IDZaposlenika { get; set; }
-        public Korisnik Korisnik { get; set; }
-        public Korisnik Zaposlenik { get; set; }
+        public Korisnik? Korisnik { get; set; }
+        public Korisnik? Zaposlenik { get; set; }
     }
 }

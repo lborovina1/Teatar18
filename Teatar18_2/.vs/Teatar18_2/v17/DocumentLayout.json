@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\esmak_4nlq9kx\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Korisnik.cs",
-              "DocumentMoniker": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Korisnik.cs",
-              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Korisnik.cs",
-              "ToolTip": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Korisnik.cs",
-              "RelativeToolTip": "Teatar18_2\\Models\\Korisnik.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T14:56:22.669Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
