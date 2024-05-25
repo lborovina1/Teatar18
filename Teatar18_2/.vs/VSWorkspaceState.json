@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Teatar18_2"
+    "\\Teatar18_2",
+    "\\Teatar18_2\\Models"
   ],
-  "SelectedNode": "\\Teatar18_2.sln",
+  "SelectedNode": "\\Teatar18_2\\Models\\Ocejna.cs",
   "PreviewInSolutionExplorer": false
 }

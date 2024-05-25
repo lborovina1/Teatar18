@@ -1,30 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\",
+  "WorkspaceRootPath": "C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\documents\\cetvrti semestar\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\rezervacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\rezervacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Ocejna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Teatar18_2\\Models\\Ocejna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\documents\\cetvrti semestar\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\izvedba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\izvedba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Karta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Teatar18_2\\Models\\Karta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\documents\\cetvrti semestar\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\predstava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\predstava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Teatar18_2\\Models\\Korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\documents\\cetvrti semestar\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Izvedba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Teatar18_2\\Models\\Izvedba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\documents\\cetvrti semestar\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\newsletter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\newsletter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\documents\\cetvrti semestar\\grupa5-tim18\\teatar18_2\\teatar18_2\\models\\uloga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\uloga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Newsletter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Teatar18_2\\Models\\Newsletter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,83 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Rezervacija.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Rezervacija.cs",
-              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Rezervacija.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Rezervacija.cs",
-              "RelativeToolTip": "Teatar18_2\\Models\\Rezervacija.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "DocumentIndex": 1,
+              "Title": "Karta.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Karta.cs",
+              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Karta.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Karta.cs",
+              "RelativeToolTip": "Teatar18_2\\Models\\Karta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:22:21.28Z",
+              "WhenOpened": "2024-05-25T00:04:40.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Korisnik.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Korisnik.cs",
-              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Korisnik.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Korisnik.cs",
-              "RelativeToolTip": "Teatar18_2\\Models\\Korisnik.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:14:44.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Izvedba.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Izvedba.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Izvedba.cs",
               "RelativeDocumentMoniker": "Teatar18_2\\Models\\Izvedba.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Izvedba.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Izvedba.cs",
               "RelativeToolTip": "Teatar18_2\\Models\\Izvedba.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:14:13.787Z",
+              "WhenOpened": "2024-05-25T00:10:19.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Newsletter.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Newsletter.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Newsletter.cs",
               "RelativeDocumentMoniker": "Teatar18_2\\Models\\Newsletter.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Newsletter.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Newsletter.cs",
               "RelativeToolTip": "Teatar18_2\\Models\\Newsletter.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T21:13:38.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Predstava.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Predstava.cs",
-              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Predstava.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Predstava.cs",
-              "RelativeToolTip": "Teatar18_2\\Models\\Predstava.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T20:57:44.715Z",
+              "WhenOpened": "2024-05-25T00:11:10.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Uloga.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Uloga.cs",
-              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Uloga.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Uloga.cs",
-              "RelativeToolTip": "Teatar18_2\\Models\\Uloga.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Korisnik.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Korisnik.cs",
+              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Korisnik.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Korisnik.cs",
+              "RelativeToolTip": "Teatar18_2\\Models\\Korisnik.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T20:58:48.272Z"
+              "WhenOpened": "2024-05-25T00:04:55.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ocejna.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Ocejna.cs",
+              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Ocejna.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\Desktop\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Models\\Ocejna.cs",
+              "RelativeToolTip": "Teatar18_2\\Models\\Ocejna.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T00:04:21.488Z",
+              "EditorCaption": ""
             }
           ]
         }
