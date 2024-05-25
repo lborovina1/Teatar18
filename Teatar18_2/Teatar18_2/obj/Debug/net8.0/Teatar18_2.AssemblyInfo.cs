@@ -11,11 +11,12 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Teatar18_2-03617561-042f-42b8-a3a2-e3219a6b4907")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Teatar18_2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b385edca82f82fce3cdd333fc0efccc030cee3bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e53a0c97a595e8ba4eea509278d89ce73dc490a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Teatar18_2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Teatar18_2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

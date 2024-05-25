@@ -1,5 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Teatar18_2.Models;
 
 public class Karta
 {
@@ -9,6 +11,7 @@ public class Karta
     public int sjediste { get; set; }
     public double cijena { get; set; }
     public bool placena { get; set; } = false;
-    [ForeignKey("Rezervacija")] public int IDRezervacije { get; set; }  
-
+    [ForeignKey("Rezervacija")] public int? IDRezervacije { get; set; } 
+    public Izvedba? Izvedba { get; set; }
+    public Rezervacija? Rezervacija { get; set; }
 }

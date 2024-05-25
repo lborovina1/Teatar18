@@ -6,23 +6,17 @@ namespace Teatar18_2.Models
 {
     public class Predstava
     {
-        public Predstava() { }
-
+        public Predstava() {}
         [Key] public int ID { get; set; }
-        public String Naziv { get; set; }
-        public List<String> glumci { get; set; }
-        public List<String> scenristi { get; set; }
-        public List<String> reziseri { get; set; }
-        public List<String> scenografi { get; set; }
+        public string naziv { get; set; }
+        public string glumci { get; set; }
+        public string? scenaristi { get; set; }
+        public string? reziseri { get; set; }
+        public string? scenografi { get; set; }
         public Zanr zanr { get; set; }
-        public String opis { get; set; }
-        public Uri poster { get; set; }
+        public string opis { get; set; }
+        public string poster { get; set; }
         public int trajanje { get; set; }
-        public List<double> ocjene { get; set; }
-        public List<int> slobodneKarte { get; set; }
-        public bool uRepertoaru { get; set; }
-
-        public void ocijeniPredstavu(){ }
-        public double izracunajProsjecnuOcjenu(){ return ocjene.Average(); }
+        public bool uRepertoaru { get; set; } = false;
     }
 }
