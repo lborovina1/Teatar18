@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj": {}
+    "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj": {
+    "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
+        "projectUniqueName": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
         "projectName": "Teatar18_2",
-        "projectPath": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
+        "projectPath": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
         "packagesPath": "C:\\Users\\esmak_4nlq9kx\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\esmak_4nlq9kx\\grupa5-tim18\\Teatar18_2\\Teatar18_2\\obj\\",
+        "outputPath": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\esmak_4nlq9kx\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,19 +51,29 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
