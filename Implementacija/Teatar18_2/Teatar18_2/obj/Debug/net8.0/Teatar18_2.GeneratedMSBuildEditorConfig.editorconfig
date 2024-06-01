@@ -58,8 +58,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmak_4nlq9kx/Documents/GitHub/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
+[C:/Users/esmak_4nlq9kx/Documents/GitHub/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/Rezervacije.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmV6ZXJ2YWNpamUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/esmak_4nlq9kx/Documents/GitHub/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
@@ -220,6 +220,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/esmak_4nlq9kx/Documents/GitHub/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/esmak_4nlq9kx/Documents/GitHub/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Kupovina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcS3Vwb3ZpbmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/esmak_4nlq9kx/Documents/GitHub/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Shared/Error.cshtml]

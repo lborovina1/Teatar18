@@ -1,0 +1,49 @@
+﻿@page
+@model RezervacijeModel
+
+@{
+    ViewData["Title"] = "Rezervacije";
+    ViewData["ActivePage"] = ManageNavPages.Rezervacije;
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>@ViewData["Title"]</h3>
+        <partial name="_StatusMessage" for="StatusMessage" />
+
+        <!-- srediti koje se informacije stvarno trebaju prikazivati -->
+        @if (Model.Rezervacije != null && Model.Rezervacije.Any())
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Kupovina</th>
+                        <th>Broj Karata</th>
+                        <th>ID Izvedbe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var rezervacija in Model.Rezervacije)
+                    {
+                        <tr>
+                            <td>@rezervacija.ID</td>
+                            <td>@rezervacija.kupovina</td>
+                            <td>@rezervacija.brojKarata</td>
+                            <td>@rezervacija.IDIzvedbe</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No reservations found.</p>
+        }
+        <!---------------------------------------------------------->
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

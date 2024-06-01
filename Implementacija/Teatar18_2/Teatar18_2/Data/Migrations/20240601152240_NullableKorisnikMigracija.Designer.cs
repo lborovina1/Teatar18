@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Teatar18_2.Data;
 
@@ -11,9 +12,11 @@ using Teatar18_2.Data;
 namespace Teatar18_2.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240601152240_NullableKorisnikMigracija")]
+    partial class NullableKorisnikMigracija
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -433,9 +436,6 @@ namespace Teatar18_2.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
-                    b.Property<int>("IDIzvedbe")
-                        .HasColumnType("int");
-
                     b.Property<string>("IDKorisnikaId")
                         .HasColumnType("nvarchar(450)");
 
@@ -452,8 +452,6 @@ namespace Teatar18_2.Data.Migrations
                         .HasColumnType("float");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("IDIzvedbe");
 
                     b.HasIndex("IDKorisnikaId");
 
@@ -567,19 +565,11 @@ namespace Teatar18_2.Data.Migrations
 
             modelBuilder.Entity("Teatar18_2.Models.Rezervacija", b =>
                 {
-                    b.HasOne("Teatar18_2.Models.Izvedba", "Izvedba")
-                        .WithMany()
-                        .HasForeignKey("IDIzvedbe")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Teatar18_2.Models.Korisnik", "IDKorisnika")
                         .WithMany()
                         .HasForeignKey("IDKorisnikaId");
 
                     b.Navigation("IDKorisnika");
-
-                    b.Navigation("Izvedba");
                 });
 #pragma warning restore 612, 618
         }

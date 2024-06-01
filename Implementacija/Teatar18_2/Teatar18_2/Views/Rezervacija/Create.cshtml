@@ -12,6 +12,13 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="IDIzvedbe" class="control-label"></label>
+                <select asp-for="IDIzvedbe" class="form-control" asp-items="ViewBag.IDIzvedbe"></select>
+            </div>
+            <!--<input type="hidden" asp-for="IDIzvedbe" />-->
+
             <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="kupovina" /> @Html.DisplayNameFor(model => model.kupovina)
@@ -22,11 +29,25 @@
                 <input asp-for="brojKarata" class="form-control" />
                 <span asp-validation-for="brojKarata" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="popust" class="control-label"></label>
-                <input asp-for="popust" class="form-control" />
-                <span asp-validation-for="popust" class="text-danger"></span>
-            </div>
+            
+            <input type="hidden" asp-for="popust" />
+            
+            <!--<div class="form-group">
+                    <label asp-for="popust" class="control-label"></label>
+                    <input asp-for="popust" class="form-control" />
+                    <span asp-validation-for="popust" class="text-danger"></span>
+                </div>
+            -->
+
+            <input type="hidden" asp-for="aktivna" />
+
+            <!--<div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="aktivna" /> @Html.DisplayNameFor(model => model.aktivna)
+                    </label>
+                </div>
+            -->
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

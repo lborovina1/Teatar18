@@ -143,6 +143,21 @@ namespace Teatar18_2.Areas.Identity.Pages.Account
                     await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
+                    //===adding UserRole===
+
+                    var userRoleResult = await _userManager.AddToRoleAsync(user, "Korisnik");
+
+                    if (userRoleResult.Succeeded)
+                    {
+                        _logger.LogInformation("Role Korisnik has been given to the previously added user.");
+                    }
+                    foreach (var error in userRoleResult.Errors)
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
+
+                    //=====================
+
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
                         return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
