@@ -18,5 +18,6 @@ namespace Teatar18_2.Models
         public string poster { get; set; }
         public int trajanje { get; set; }
         public bool uRepertoaru { get; set; } = false;
+        public bool preporucena { get; set; } = false;
     }
 }

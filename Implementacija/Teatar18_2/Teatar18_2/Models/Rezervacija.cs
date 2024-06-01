@@ -11,5 +11,6 @@ namespace Teatar18_2.Models
         public bool kupovina { get; set; }
         public int brojKarata { get; set; }
         public double popust { get; set; } = 0;
+        public bool aktivna { get; set; } = true;
     }
 }
