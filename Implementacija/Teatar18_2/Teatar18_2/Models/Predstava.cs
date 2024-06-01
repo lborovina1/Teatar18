@@ -13,7 +13,7 @@ namespace Teatar18_2.Models
         public string? scenaristi { get; set; }
         public string? reziseri { get; set; }
         public string? scenografi { get; set; }
-        public Zanr zanr { get; set; }
+        [EnumDataType(typeof(Zanr))] public Zanr zanr { get; set; }
         public string opis { get; set; }
         public string poster { get; set; }
         public int trajanje { get; set; }

@@ -63,6 +63,10 @@ namespace Teatar18_2.Controllers
             {
                 _context.Add(izvedba);
                 await _context.SaveChangesAsync();
+
+                // Dodaju se bazu i karte za izvedbu
+                await generisiKarteZaIzvedbu(izvedba.ID, 20, 10);
+
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IDPredstave"] = new SelectList(_context.Predstava, "ID", "ID", izvedba.IDPredstave);
@@ -159,6 +163,70 @@ namespace Teatar18_2.Controllers
         private bool IzvedbaExists(int id)
         {
             return _context.Izvedba.Any(e => e.ID == id);
+        }
+
+        public IActionResult pregledRepertoara()
+        {
+            var predstaveUIzvedbama = _context.Izvedba.Select(p => p.IDPredstave).ToList();
+            var predstave = _context.Predstava.Where(p => predstaveUIzvedbama.Contains(p.ID)).ToList();
+
+            return View("Repertoar", predstave);
+        }
+
+        public async Task generisiKarteZaIzvedbu(int izvedbaID, int brojKarata, double cijena)
+        {
+            var karteZaDodati = new List<Karta>();
+
+            for (int i = 1; i <= brojKarata; i++)
+            {
+                var novaKarta = new Karta
+                {
+                    IDIzvedbe = izvedbaID,
+                    sjediste = i,
+                    cijena = cijena,
+                    placena = false,
+                    IDRezervacije = null
+                };
+                karteZaDodati.Add(novaKarta);
+            }
+
+            _context.Karta.AddRange(karteZaDodati);
+            await _context.SaveChangesAsync();
+        }
+
+        // ViewBag prosljedjuje u IzmjenaRepertoara view listu predstava
+        // Poziv metode kada se odabere izmjena repertoara
+        public async Task<IActionResult> izmjenaRepertoara()
+        {
+            var predstave = await _context.Predstava.ToListAsync();
+            foreach(var predstava in predstave)
+            {
+                predstava.uRepertoaru = false;
+            }
+            await _context.SaveChangesAsync();
+
+            ViewBag.Predstava = predstave;
+            return View("IzmjenaRepertoara");
+        }
+
+        // Poziv metode iz multi-select dropdown liste
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> izmjenaRepertoara(int[] odabranePredstaveID)
+        {
+            if(odabranePredstaveID != null)
+            {
+                foreach(var predstavaID in odabranePredstaveID)
+                {
+                    var predstava = await _context.Predstava.FindAsync(predstavaID);
+                    if(predstava != null)
+                    {
+                        predstava.uRepertoaru = true;
+                    }
+                }
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction("pregledRepertoara");
         }
     }
 }

@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\",
+  "WorkspaceRootPath": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\esmak_4nlq9kx\\documents\\github\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\controllers\\predstavacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\controllers\\predstavacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\esmak_4nlq9kx\\documents\\github\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\models\\rezervacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\rezervacija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\controllers\\izvedbacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\controllers\\izvedbacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\esmak_4nlq9kx\\documents\\github\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\models\\predstava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\predstava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\esmak_4nlq9kx\\documents\\github\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\data\\migrations\\20240601101433_migracijanakonizmjenerezervacije.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\data\\migrations\\20240601101433_migracijanakonizmjenerezervacije.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\esmak_4nlq9kx\\documents\\github\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\data\\migrations\\20240601095949_migracijanakonizmjenepredstave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\data\\migrations\\20240601095949_migracijanakonizmjenepredstave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\models\\zanr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\zanr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1524,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -42,64 +38,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\ScaffoldingReadMe.txt",
-              "RelativeDocumentMoniker": "Teatar18_2\\ScaffoldingReadMe.txt",
-              "ToolTip": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\ScaffoldingReadMe.txt",
-              "RelativeToolTip": "Teatar18_2\\ScaffoldingReadMe.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-06-01T10:32:59.198Z",
+              "DocumentIndex": 1,
+              "Title": "IzvedbaController.cs",
+              "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\IzvedbaController.cs",
+              "RelativeDocumentMoniker": "Teatar18_2\\Controllers\\IzvedbaController.cs",
+              "ToolTip": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\IzvedbaController.cs",
+              "RelativeToolTip": "Teatar18_2\\Controllers\\IzvedbaController.cs",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAswNAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T12:12:11.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20240601101433_MigracijaNakonIzmjeneRezervacije.cs",
-              "DocumentMoniker": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Data\\Migrations\\20240601101433_MigracijaNakonIzmjeneRezervacije.cs",
-              "RelativeDocumentMoniker": "Teatar18_2\\Data\\Migrations\\20240601101433_MigracijaNakonIzmjeneRezervacije.cs",
-              "ToolTip": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Data\\Migrations\\20240601101433_MigracijaNakonIzmjeneRezervacije.cs",
-              "RelativeToolTip": "Teatar18_2\\Data\\Migrations\\20240601101433_MigracijaNakonIzmjeneRezervacije.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "PredstavaController.cs",
+              "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\PredstavaController.cs",
+              "RelativeDocumentMoniker": "Teatar18_2\\Controllers\\PredstavaController.cs",
+              "ToolTip": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\PredstavaController.cs",
+              "RelativeToolTip": "Teatar18_2\\Controllers\\PredstavaController.cs",
+              "ViewState": "AQIAAKkAAAAAAAAAAAA/wM8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T10:14:34.266Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Rezervacija.cs",
-              "DocumentMoniker": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Models\\Rezervacija.cs",
-              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Rezervacija.cs",
-              "ToolTip": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Models\\Rezervacija.cs",
-              "RelativeToolTip": "Teatar18_2\\Models\\Rezervacija.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T10:10:08.457Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20240601095949_MigracijaNakonIzmjenePredstave.cs",
-              "DocumentMoniker": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Data\\Migrations\\20240601095949_MigracijaNakonIzmjenePredstave.cs",
-              "RelativeDocumentMoniker": "Teatar18_2\\Data\\Migrations\\20240601095949_MigracijaNakonIzmjenePredstave.cs",
-              "ToolTip": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Data\\Migrations\\20240601095949_MigracijaNakonIzmjenePredstave.cs",
-              "RelativeToolTip": "Teatar18_2\\Data\\Migrations\\20240601095949_MigracijaNakonIzmjenePredstave.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T09:59:49.977Z"
+              "WhenOpened": "2024-06-01T12:12:09.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Predstava.cs",
-              "DocumentMoniker": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Models\\Predstava.cs",
-              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Predstava.cs",
-              "ToolTip": "C:\\Users\\esmak_4nlq9kx\\Documents\\GitHub\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Models\\Predstava.cs",
-              "RelativeToolTip": "Teatar18_2\\Models\\Predstava.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAADwvxQAAAA2AAAA",
+              "Title": "Zanr.cs",
+              "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Models\\Zanr.cs",
+              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Zanr.cs",
+              "ToolTip": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Models\\Zanr.cs",
+              "RelativeToolTip": "Teatar18_2\\Models\\Zanr.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T09:58:10.807Z"
+              "WhenOpened": "2024-06-01T14:57:46.459Z",
+              "EditorCaption": ""
             }
           ]
         }
