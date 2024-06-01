@@ -56,16 +56,16 @@ namespace Teatar18_2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,IDPredstave,ocjena")] Ocjena ocjena)
+        public async Task<IActionResult> Create([Bind("ID,IDPredstave,ocjena")] Ocjena ocj)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(ocjena);
+                _context.Add(ocj);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IDPredstave"] = new SelectList(_context.Predstava, "ID", "ID", ocjena.IDPredstave);
-            return View(ocjena);
+            ViewData["IDPredstave"] = new SelectList(_context.Predstava, "ID", "ID", ocj.IDPredstave);
+            return View(ocj);
         }
 
         // GET: OcjenaPredstave/Edit/5
@@ -90,9 +90,9 @@ namespace Teatar18_2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,IDPredstave,ocjena")] Ocjena ocjena)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,IDPredstave,ocjena")] Ocjena ocj)
         {
-            if (id != ocjena.ID)
+            if (id != ocj.ID)
             {
                 return NotFound();
             }
@@ -101,12 +101,12 @@ namespace Teatar18_2.Controllers
             {
                 try
                 {
-                    _context.Update(ocjena);
+                    _context.Update(ocj);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!OcjenaExists(ocjena.ID))
+                    if (!OcjenaExists(ocj.ID))
                     {
                         return NotFound();
                     }
@@ -117,8 +117,8 @@ namespace Teatar18_2.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IDPredstave"] = new SelectList(_context.Predstava, "ID", "ID", ocjena.IDPredstave);
-            return View(ocjena);
+            ViewData["IDPredstave"] = new SelectList(_context.Predstava, "ID", "ID", ocj.IDPredstave);
+            return View(ocj);
         }
 
         // GET: OcjenaPredstave/Delete/5

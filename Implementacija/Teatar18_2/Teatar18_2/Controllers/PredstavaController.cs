@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -23,6 +24,17 @@ namespace Teatar18_2.Controllers
         public async Task<IActionResult> Index()
         {
             return View(await _context.Predstava.ToListAsync());
+        }
+
+        // Poziva se iz repertoara za detaljniji pregled jedne predstave
+        public IActionResult pregledPredstave(int predstavaID)
+        {
+            var predstava = _context.Predstava.FirstOrDefault(p => p.ID == predstavaID);
+            if (predstava == null)
+            {
+                return NotFound();
+            }
+            return View("Predstava", predstava);
         }
 
         // GET: Predstava/Details/5
@@ -152,6 +164,44 @@ namespace Teatar18_2.Controllers
         private bool PredstavaExists(int id)
         {
             return _context.Predstava.Any(e => e.ID == id);
+        }
+
+        // Pomocna metoda koja se samo poziva iz dajPreporuke
+        public async Task<double> izracunajProsjecnuOcjenu(int predstavaID)
+        {
+            var ocjene = await _context.Ocjena
+                                       .Where(e => e.IDPredstave == predstavaID)
+                                       .Select(e => e.ocjena)
+                                       .ToListAsync();
+
+            if (ocjene.Count == 0)
+            {
+                return 0;
+            }
+            
+            double prosjecnaOcjena = ocjene.Average();
+            return prosjecnaOcjena;
+        }
+
+        // Poziva se iz HomeControllera za prikaz preporuka na home page-u
+        public async Task<List<Predstava>> dajPreporuke()
+        {
+            var predstave = await _context.Predstava.ToListAsync();
+            var predstaveOcjene = new List<(Predstava predstava, double prosjecnaOcjena)>();
+
+            foreach(var predstava in predstave)
+            {
+                double prosjecnaOcjena = await izracunajProsjecnuOcjenu(predstava.ID);
+                predstaveOcjene.Add((predstava, prosjecnaOcjena));
+            }
+
+            var najbolje = predstaveOcjene
+                .OrderByDescending(e => e.prosjecnaOcjena)
+                .Take(3)
+                .Select(e => e.predstava)
+                .ToList();
+
+            return najbolje;
         }
     }
 }
