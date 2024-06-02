@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Net;
+using System.Net.Mail;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Versioning;
 using Teatar18_2.Data;
 using Teatar18_2.Models;
 
@@ -18,140 +21,65 @@ namespace Teatar18_2.Controllers
         {
             _context = context;
         }
-
-        // GET: Newsletter
-        public async Task<IActionResult> Index()
+        
+        //metoda koja salje mailove svim subscribed Korisnicima
+        public IActionResult saljiNewsletter(string subject="Novi repertoar", string message= "Na web stranici je postavljen repertoar za nadolazeci mjesec.\nPogledajte ga i rezervisite svoje karte na vrijeme.")
         {
-            return View(await _context.Newsletter.ToListAsync());
+            var subscribedUsers = _context.Korisnik.Where(k => k.newsletter).ToList();
+
+            if (!subscribedUsers.Any())
+            {
+                return Ok("Nema korniska koji su pretplaceni na newsletter.");
+            }
+
+            var newsletter = new Newsletter
+            {   
+                informacija = message,
+                datumSlanja = DateTime.Now
+            };
+
+            _context.Newsletter.Add(newsletter);
+            _context.SaveChanges();
+
+            foreach(var user in subscribedUsers)
+            {
+                SendEmail(user.Email, subject, newsletter.informacija);
+            }
+
+            return Ok("Emailovi su uspjesno poslani.");
         }
 
-        // GET: Newsletter/Details/5
-        public async Task<IActionResult> Details(int? id)
+        private void SendEmail(string toEmail, string subject, string body)
         {
-            if (id == null)
+            var fromEmail = "teatar18.5@gmail.com";
+            var fromPassword = "Teata5R18!OoaD";
+
+            var smtpClient = new SmtpClient("smtp.gmail.com")
             {
-                return NotFound();
-            }
+                Port = 587,
+                Credentials = new NetworkCredential(fromEmail, fromPassword),
+                EnableSsl = true,
+            };
 
-            var newsletter = await _context.Newsletter
-                .FirstOrDefaultAsync(m => m.ID == id);
-            if (newsletter == null)
+            var mailMessage = new MailMessage
             {
-                return NotFound();
-            }
+                From = new MailAddress(fromEmail),
+                Subject = subject,
+                Body = body,
+                IsBodyHtml = true,
+            };
 
-            return View(newsletter);
-        }
+            mailMessage.To.Add(toEmail);
 
-        // GET: Newsletter/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Newsletter/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,informacija,datumSlanja")] Newsletter newsletter)
-        {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(newsletter);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                smtpClient.Send(mailMessage);
             }
-            return View(newsletter);
-        }
-
-        // GET: Newsletter/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
+            catch (Exception ex)
             {
-                return NotFound();
+                // Handle exceptions (logging, etc.)
+                Console.WriteLine($"Exception caught in SendEmail(): {ex.ToString()}");
             }
-
-            var newsletter = await _context.Newsletter.FindAsync(id);
-            if (newsletter == null)
-            {
-                return NotFound();
-            }
-            return View(newsletter);
-        }
-
-        // POST: Newsletter/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,informacija,datumSlanja")] Newsletter newsletter)
-        {
-            if (id != newsletter.ID)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(newsletter);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!NewsletterExists(newsletter.ID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(newsletter);
-        }
-
-        // GET: Newsletter/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var newsletter = await _context.Newsletter
-                .FirstOrDefaultAsync(m => m.ID == id);
-            if (newsletter == null)
-            {
-                return NotFound();
-            }
-
-            return View(newsletter);
-        }
-
-        // POST: Newsletter/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var newsletter = await _context.Newsletter.FindAsync(id);
-            if (newsletter != null)
-            {
-                _context.Newsletter.Remove(newsletter);
-            }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool NewsletterExists(int id)
-        {
-            return _context.Newsletter.Any(e => e.ID == id);
-        }
+        } 
     }
 }

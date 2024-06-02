@@ -867,3 +867,16 @@ C:\Users\lamij\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\De
 C:\Users\lamij\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.pdb
 C:\Users\lamij\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.genruntimeconfig.cache
 C:\Users\lamij\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\ref\Teatar18_2.dll
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.csproj.AssemblyReference.cache
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.AssemblyInfoInputs.cache
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.AssemblyInfo.cs
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.RazorAssemblyInfo.cache
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.RazorAssemblyInfo.cs
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.sourcelink.json
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.dll
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\refint\Teatar18_2.dll
+C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\obj\Debug\net8.0\Teatar18_2.pdb
