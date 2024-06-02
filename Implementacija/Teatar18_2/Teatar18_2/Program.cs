@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Teatar18_2;
 using Teatar18_2.Data;
 using Teatar18_2.Models;
 using Teatar18_2.Services;
