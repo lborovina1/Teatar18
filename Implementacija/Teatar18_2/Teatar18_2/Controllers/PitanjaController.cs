@@ -74,7 +74,7 @@ namespace Teatar18_2.Controllers
             pitanje.datumOdgovora = DateTime.Now;
 
             // IDZaposlenika je onaj od trenutno ulogovanog zaposlenika
-            pitanje.IDZaposlenika = _context.Users.SingleOrDefault(k => k.Email == User.Identity.Name);
+            pitanje.IDZaposlenika = _context.Korisnik.SingleOrDefault(k => k.Email == User.Identity.Name);
 
             _context.SaveChanges();
 
