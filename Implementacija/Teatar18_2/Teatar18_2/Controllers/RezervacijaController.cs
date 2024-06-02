@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Teatar18_2.Data;
 using Teatar18_2.Models;
+using Teatar18_2.Services;
 
 namespace Teatar18_2.Controllers
 {
@@ -15,20 +16,26 @@ namespace Teatar18_2.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<Korisnik> _userManager;
+        private readonly RezervacijaService _rezervacijaService;
 
         public RezervacijaController(
             ApplicationDbContext context,
-            UserManager<Korisnik> userManager)
+            UserManager<Korisnik> userManager,
+            RezervacijaService rezervacijaService)
         {
             _context = context;
             _userManager = userManager;
+            _rezervacijaService = rezervacijaService;
         }
 
         // GET: Rezervacija
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Rezervacija.Include(r => r.Izvedba);
-            return View(await applicationDbContext.ToListAsync());
+            var rezervacije = await _context.Rezervacija
+                .Include(r => r.Izvedba)
+                .ToListAsync();
+
+            return View(rezervacije);
         }
 
         // GET: Rezervacija/Details/5
@@ -51,34 +58,26 @@ namespace Teatar18_2.Controllers
         }
 
         // GET: Rezervacija/Create
-        public IActionResult Create()       //treba da prima int IDIzvedbe
+        public IActionResult KreirajRezervaciju(int IDIzvedbe)       
         {
-            //var rezervacija = new Rezervacija { IDIzvedbe = IDIzvedbe };
-            //return View(rezervacija);
-
-            //probno
-            ViewData["IDIzvedbe"] = new SelectList(_context.Izvedba, "ID", "ID");
-            return View();
+            var rezervacija = new Rezervacija { IDIzvedbe = IDIzvedbe };
+            return View("Create", rezervacija);
         }
 
-        // POST: Rezervacija/Create ---------------------> kreirajRezervaciju()
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Rezervacija/Create 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,IDIzvedbe,kupovina,brojKarata")] Rezervacija rezervacija)
+        public async Task<IActionResult> KreirajRezervaciju([Bind("ID,IDIzvedbe,kupovina,brojKarata")] Rezervacija rezervacija)
         {
             //==korisnik koji je kreirao rezervaciju==
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound("Unable to load user.");
+                return NotFound("Nije pronadjen korisnik.");
             }
 
             rezervacija.IDKorisnika = user;
-
-            //========================================
 
             //==provjera i zauzimanje karata (+ izmjena u izvedbi)==
 
@@ -94,7 +93,8 @@ namespace Teatar18_2.Controllers
             if(izvedba.brojSlobodnihKarata < rezervacija.brojKarata)
             {
                 //implementirati logiku za to (view s greskom i sl)
-                return RedirectToAction(nameof(Index));
+                //privremeno rjesenje
+                return View("NedovoljnoKarata");
             }
 
             var slobodneKarte = await _context.Karta
@@ -108,16 +108,11 @@ namespace Teatar18_2.Controllers
                 return NotFound("Nisu pronadjene karte.");
             }
 
-            //=======================================================
-
             //========obracun popusta========
 
-            if ((user.brojKupljenihKarata + rezervacija.brojKarata) % 5 == 0)     //povecati kod kupovine!!
-            {
+            if(Enumerable.Range(user.brojKupljenihKarata + 1, rezervacija.brojKarata).Any(x => x % 5 == 0)){
                 rezervacija.popust = 0.2;
             }
-
-            //===============================
 
             if (ModelState.IsValid)
             {
@@ -133,25 +128,22 @@ namespace Teatar18_2.Controllers
 
                 izvedba.brojSlobodnihKarata -= rezervacija.brojKarata;
 
-                //========================================
-
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
 
-            //==Errori ako ModelState nije valid==
-            var errors = ModelState.Values.SelectMany(v => v.Errors);
-            foreach (var error in errors)
-            {
-                Console.WriteLine(error.ErrorMessage); 
+                //==kupovina - preusmjeri==
+                if (rezervacija.kupovina)
+                {
+                    return RedirectToAction(nameof(PlatiRezervaciju), new { id = rezervacija.ID });
+                }
+
+                return RedirectToAction(nameof(Index));     //vidjeti sta da vraca
             }
-            //====================================
 
             return View(rezervacija);
         }
 
-        // GET: Rezervacija/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // GET: Rezervacija/Edit/5 
+        public async Task<IActionResult> Edit(int? id)      //ne koristi je korisnik
         {
             if (id == null)
             {
@@ -164,14 +156,11 @@ namespace Teatar18_2.Controllers
                 return NotFound();
             }
 
-            //ViewData["IDIzvedbe"] = new SelectList(_context.Izvedba, "ID", "ID", rezervacija.IDIzvedbe);
-            //return View(rezervacija);
-            return View("Kupovina", rezervacija);
+            ViewData["IDIzvedbe"] = new SelectList(_context.Izvedba, "ID", "ID", rezervacija.IDIzvedbe);
+            return View(rezervacija);
         }
 
-        // POST: Rezervacija/Edit/5 ---------------------> platiRezervaciju()
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Rezervacija/Edit/5 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,IDIzvedbe,kupovina,brojKarata,popust,aktivna")] Rezervacija rezervacija)
@@ -185,7 +174,6 @@ namespace Teatar18_2.Controllers
             {
                 try
                 {
-                    rezervacija.kupovina = true;
                     _context.Update(rezervacija);
 
                     await _context.SaveChangesAsync();
@@ -202,35 +190,14 @@ namespace Teatar18_2.Controllers
                     }
                 }
 
-                //==postavi karte na placene==
-
-                var rezervisaneKarte = await _context.Karta
-                    .Where(k => k.IDRezervacije == rezervacija.ID)
-                    .ToListAsync();
-
-                if (rezervisaneKarte == null)
-                {
-                    return NotFound("Nisu pronadjene karte.");
-                }
-
-                foreach (var karta in rezervisaneKarte)
-                {
-                    karta.placena = true;
-                }
-
-                await _context.SaveChangesAsync();
-
-                //============================
-
                 return RedirectToAction(nameof(Index));
             }
-            //ViewData["IDIzvedbe"] = new SelectList(_context.Izvedba, "ID", "ID", rezervacija.IDIzvedbe);
-            //return View(rezervacija);
-            return View("Kupovina", rezervacija);
+            ViewData["IDIzvedbe"] = new SelectList(_context.Izvedba, "ID", "ID", rezervacija.IDIzvedbe);
+            return View(rezervacija);
         }
 
         // GET: Rezervacija/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> OtkaziRezervaciju(int? id)
         {
             if (id == null)
             {
@@ -240,63 +207,66 @@ namespace Teatar18_2.Controllers
             var rezervacija = await _context.Rezervacija
                 .Include(r => r.Izvedba)
                 .FirstOrDefaultAsync(m => m.ID == id);
+
             if (rezervacija == null)
             {
                 return NotFound();
             }
 
-            return View(rezervacija);
+            return View("Delete", rezervacija);
         }
 
-        // POST: Rezervacija/Delete/5 ---------------------> otkaziRezervaciju()
+        // POST: Rezervacija/Delete/5 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> OtkaziRezervacijuConfirmed(int id)
         {
-            var rezervacija = await _context.Rezervacija.FindAsync(id);
-            if (rezervacija != null)
+            if (await _rezervacijaService.OtkaziRezervaciju(id))
             {
-                //==postavljanje karata na slobodne i edit izvedbe (brojSlobodnihKarata)==
-
-                var izvedba = await _context.Izvedba
-                    .Where(i => i.ID == rezervacija.IDIzvedbe)
-                    .FirstOrDefaultAsync();
-
-                if (izvedba == null)
-                {
-                    return NotFound("Nije pronadjena izvedba.");
-                }
-
-                var rezervisaneKarte = await _context.Karta
-                    .Where(k => k.IDRezervacije == rezervacija.ID)
-                    .ToListAsync();
-
-                if (rezervisaneKarte == null)
-                {
-                    return NotFound("Nisu pronadjene karte.");
-                }
-
-                foreach (var karta in rezervisaneKarte)
-                {
-                    karta.IDRezervacije = null;
-                }
-
-                izvedba.brojSlobodnihKarata += rezervacija.brojKarata;
-
-                await _context.SaveChangesAsync();
-
-                //=======================================================
-
-                _context.Rezervacija.Remove(rezervacija);
+                return RedirectToAction(nameof(Index));
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return NotFound();
         }
 
         private bool RezervacijaExists(int id)
         {
             return _context.Rezervacija.Any(e => e.ID == id);
+        }
+        public async Task<IActionResult> PlatiRezervaciju(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var rezervacija = await _context.Rezervacija.FindAsync(id);
+            if (rezervacija == null)
+            {
+                return NotFound();
+            }
+
+            return View("Kupovina", rezervacija);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PlatiRezervaciju(int id, [Bind("ID,IDIzvedbe,kupovina,brojKarata,popust,aktivna")] Rezervacija rezervacija)
+        {
+            if (id != rezervacija.ID)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                if (await _rezervacijaService.PlatiRezervaciju(id) == false)
+                {
+                    return View();
+                }
+
+                return RedirectToAction(nameof(Index));     //vidjeti sta da vraca
+            }
+            
+            return View("Kupovina", rezervacija);
         }
     }
 }

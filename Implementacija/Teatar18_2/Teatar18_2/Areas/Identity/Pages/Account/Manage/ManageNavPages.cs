@@ -70,6 +70,10 @@ namespace  Teatar18_2.Areas.Identity.Pages.Account.Manage
 
         public static string Rezervacije => "Rezervacije";
 
+        public static string Kupovina => "Kupovina";
+
+        public static string OtkazivanjeRezervacije => "OtkazivanjeRezervacije";
+
         //===========================
 
         public static string IndexNavClass(ViewContext viewContext) => PageNavClass(viewContext, Index);
@@ -124,6 +128,10 @@ namespace  Teatar18_2.Areas.Identity.Pages.Account.Manage
         //==========================
 
         public static string RezervacijeNavClass(ViewContext viewContext) => PageNavClass(viewContext, Rezervacije);
+
+        public static string KupovinaNavClass(ViewContext viewContext) => PageNavClass(viewContext, Kupovina);
+
+        public static string OtkazivanjeRezervacijeNavClass(ViewContext viewContext) => PageNavClass(viewContext, OtkazivanjeRezervacije);
 
         //==========================
 

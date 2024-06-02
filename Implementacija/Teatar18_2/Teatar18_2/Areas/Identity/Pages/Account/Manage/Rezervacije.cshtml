@@ -14,33 +14,43 @@
         <!-- srediti koje se informacije stvarno trebaju prikazivati -->
         @if (Model.Rezervacije != null && Model.Rezervacije.Any())
         {
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Kupovina</th>
-                        <th>Broj Karata</th>
-                        <th>ID Izvedbe</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var rezervacija in Model.Rezervacije)
-                    {
+            <form method="post">
+                <table class="table">
+                    <thead>
                         <tr>
-                            <td>@rezervacija.ID</td>
-                            <td>@rezervacija.kupovina</td>
-                            <td>@rezervacija.brojKarata</td>
-                            <td>@rezervacija.IDIzvedbe</td>
+                            <th>ID</th>
+                            <th>Kupovina</th>
+                            <th>Broj Karata</th>
+                            <th>ID Izvedbe</th>
                         </tr>
-                    }
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @foreach (var rezervacija in Model.Rezervacije)
+                        {
+                            <tr>
+                                <td>@rezervacija.ID</td>
+                                <td>@rezervacija.kupovina</td>
+                                <td>@rezervacija.brojKarata</td>
+                                <td>@rezervacija.IDIzvedbe</td>
+                                @if (!rezervacija.kupovina)
+                                {
+                                    <td>
+                                        <button type="submit" name="id" value="@rezervacija.ID" asp-page-handler="Plati" class="btn btn-primary">Plati</button>
+                                    </td>
+                                }
+                                <td>
+                                    <button type="submit" name="id" value="@rezervacija.ID" asp-page-handler="Otkazi" class="btn btn-danger">Otkazi</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </form>
         }
         else
         {
-            <p>No reservations found.</p>
+            <p>Nema rezervacija.</p>
         }
-        <!---------------------------------------------------------->
     </div>
 </div>
 
