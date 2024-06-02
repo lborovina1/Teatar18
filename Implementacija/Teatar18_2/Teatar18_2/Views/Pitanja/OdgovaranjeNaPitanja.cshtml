@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Teatar18_2.Models.Pitanje>
+
+@{
+    ViewData["Title"] = "Odgovaranje Na Pitanja";
+}
+
+<h2>Odgovaranje Na Pitanja</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Predmet</th>
+            <th>Sadrzaj</th>
+            <th>Datum Postavljanja</th>
+            <th>Odgovori</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pitanje in Model)
+        {
+            <tr>
+                <td>@pitanje.predmet</td>
+                <td>@pitanje.sadrzaj</td>
+                <td>@pitanje.datumPostavljanja</td>
+                <td>
+                    <form asp-action="OdgovaranjeNaPitanja" method="post">
+                        <input type="hidden" name="pitanjeId" value="@pitanje.ID" />
+                        <textarea name="odgovor" class="form-control" required></textarea>
+                        <input type="submit" value="Odgovori" class="btn btn-primary mt-2" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

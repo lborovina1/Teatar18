@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Net;
+using System.Net.Mail;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -19,139 +21,102 @@ namespace Teatar18_2.Controllers
             _context = context;
         }
 
-        // GET: Pitanja
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Pitanje.ToListAsync());
-        }
-
-        // GET: Pitanja/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var pitanje = await _context.Pitanje
-                .FirstOrDefaultAsync(m => m.ID == id);
-            if (pitanje == null)
-            {
-                return NotFound();
-            }
-
-            return View(pitanje);
-        }
-
-        // GET: Pitanja/Create
-        public IActionResult Create()
+        //Otvara pogled za postavljanje pitanja
+        [HttpGet]
+        public IActionResult PostavljanjePitanja()
         {
             return View();
         }
 
-        // POST: Pitanja/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //submit pitanja
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,predmet,sadrzaj,datumPostavljanja,odgovoreno,datumOdgovora")] Pitanje pitanje)
+        public IActionResult PostavljanjePitanja(Pitanje pitanje)
         {
-            if (ModelState.IsValid)
+            pitanje.datumPostavljanja = DateTime.Now;
+            pitanje.odgovoreno = false;
+
+            if (User.Identity.IsAuthenticated)
             {
-                _context.Add(pitanje);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                var korisnik = _context.Users.SingleOrDefault(k => k.Email == User.Identity.Name);
+                pitanje.IDKorisnika = korisnik;
             }
-            return View(pitanje);
+            else
+            {
+                pitanje.IDKorisnika = null;
+            }
+
+            _context.Pitanje.Add(pitanje);
+            _context.SaveChanges();
+
+            return RedirectToAction("PostavljanjePitanja");
         }
 
-        // GET: Pitanja/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        //generisanje pogleda za korniska
+        [HttpGet]
+        public IActionResult OdgovaranjeNaPitanja()
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var pitanje = await _context.Pitanje.FindAsync(id);
-            if (pitanje == null)
-            {
-                return NotFound();
-            }
-            return View(pitanje);
+            var pitanja = _context.Pitanje.Where(p => !p.odgovoreno).ToList();
+            return View(pitanja);
         }
 
-        // POST: Pitanja/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //odgovaranje na pitanja
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,predmet,sadrzaj,datumPostavljanja,odgovoreno,datumOdgovora")] Pitanje pitanje)
+        public IActionResult OdgovaranjeNaPitanja(int pitanjeId, string odgovor)
         {
-            if (id != pitanje.ID)
-            {
-                return NotFound();
-            }
+            var pitanje = _context.Pitanje.SingleOrDefault(p => p.ID == pitanjeId);
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(pitanje);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!PitanjeExists(pitanje.ID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(pitanje);
-        }
-
-        // GET: Pitanja/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var pitanje = await _context.Pitanje
-                .FirstOrDefaultAsync(m => m.ID == id);
             if (pitanje == null)
             {
                 return NotFound();
             }
 
-            return View(pitanje);
-        }
+            pitanje.odgovoreno = true;
+            pitanje.datumOdgovora = DateTime.Now;
 
-        // POST: Pitanja/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var pitanje = await _context.Pitanje.FindAsync(id);
-            if (pitanje != null)
+            // IDZaposlenika je onaj od trenutno ulogovanog zaposlenika
+            pitanje.IDZaposlenika = _context.Users.SingleOrDefault(k => k.Email == User.Identity.Name);
+
+            _context.SaveChanges();
+
+            if (pitanje.IDKorisnika != null)
             {
-                _context.Pitanje.Remove(pitanje);
+                SendEmail(pitanje.IDKorisnika.Email, "Odgovor na vaše pitanje", odgovor);
             }
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("OdgovaranjeNaPitanja");
         }
 
-        private bool PitanjeExists(int id)
+        private void SendEmail(string toEmail, string subject, string body)
         {
-            return _context.Pitanje.Any(e => e.ID == id);
+            var fromEmail = "teatar18.5@gmail.com";
+            var fromPassword = "Teata5R18!OoaD";
+
+            var smtpClient = new SmtpClient("smtp.gmail.com")
+            {
+                Port = 587,
+                Credentials = new NetworkCredential(fromEmail, fromPassword),
+                EnableSsl = true,
+            };
+
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress(fromEmail),
+                Subject = subject,
+                Body = body,
+                IsBodyHtml = true,
+            };
+
+            mailMessage.To.Add(toEmail);
+
+            try
+            {
+                smtpClient.Send(mailMessage);
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (logging, etc.)
+                Console.WriteLine($"Exception caught in SendEmail(): {ex}");
+            }
         }
     }
 }
