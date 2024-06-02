@@ -37,7 +37,7 @@ namespace Teatar18_2.Controllers
 
             if (User.Identity.IsAuthenticated)
             {
-                var korisnik = _context.Users.SingleOrDefault(k => k.Email == User.Identity.Name);
+                var korisnik = _context.Korisnik.SingleOrDefault(k => k.Email == User.Identity.Name);
                 pitanje.IDKorisnika = korisnik;
             }
             else
@@ -51,7 +51,7 @@ namespace Teatar18_2.Controllers
             return RedirectToAction("PostavljanjePitanja");
         }
 
-        //generisanje pogleda za korniska
+        //generisanje pogleda za zaposlenika
         [HttpGet]
         public IActionResult OdgovaranjeNaPitanja()
         {
