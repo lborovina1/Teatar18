@@ -14,5 +14,6 @@ namespace Teatar18_2.Models
         public double popust { get; set; } = 0;
         public bool aktivna { get; set; } = true;
         public Izvedba? Izvedba { get; set; }
+        public bool ocijenjena { get; set; } = false;
     }
 }

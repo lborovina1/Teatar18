@@ -448,6 +448,9 @@ namespace Teatar18_2.Data.Migrations
                     b.Property<bool>("kupovina")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("ocijenjena")
+                        .HasColumnType("bit");
+
                     b.Property<double>("popust")
                         .HasColumnType("float");
 
