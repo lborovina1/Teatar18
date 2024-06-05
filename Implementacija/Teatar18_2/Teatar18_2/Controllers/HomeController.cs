@@ -1,20 +1,29 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Teatar18_2.Data;
 using Teatar18_2.Models;
+using Teatar18_2.Services;
 
 namespace Teatar18_2.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context;
+        private readonly PredstavaService _predstavaService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context, PredstavaService predstavaService)
         {
             _logger = logger;
+            _context = context;
+            _predstavaService = predstavaService;
         }
-        public IActionResult PristupiAplikaciji() 
+        public async Task<IActionResult> PristupiAplikaciji()
         {
-            return View();
+            var predstave = await _predstavaService.DajPreporuke();
+            return View("PocetnaView", predstave);
         }
 
         public IActionResult Index()
@@ -28,7 +37,7 @@ namespace Teatar18_2.Controllers
         }
 
         public IActionResult DajInformacijuOUstanovi() {
-            return View();
+            return View("ONamaView");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

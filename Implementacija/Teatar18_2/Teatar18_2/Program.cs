@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
 using Teatar18_2;
 using Teatar18_2.Data;
@@ -19,6 +20,7 @@ builder.Services.AddDefaultIdentity<Korisnik>(options => options.SignIn.RequireC
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<RezervacijaService>();
+builder.Services.AddScoped<PredstavaService>();
 
 var app = builder.Build();
 
