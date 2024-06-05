@@ -12,6 +12,10 @@ namespace Teatar18_2.Controllers
         {
             _logger = logger;
         }
+        public IActionResult PristupiAplikaciji() 
+        {
+            return View();
+        }
 
         public IActionResult Index()
         {
@@ -20,6 +24,10 @@ namespace Teatar18_2.Controllers
 
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        public IActionResult DajInformacijuOUstanovi() {
             return View();
         }
 

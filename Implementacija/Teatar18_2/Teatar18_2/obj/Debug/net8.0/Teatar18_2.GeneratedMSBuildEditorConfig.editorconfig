@@ -17,267 +17,275 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Teatar18_2
 build_property.RootNamespace = Teatar18_2
-build_property.ProjectDir = C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\
+build_property.ProjectDir = C:\Users\Korisnik\Documents\Cetvrti semestar\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Korisnik\ETF_LV\OOAD\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2
+build_property.MSBuildProjectDirectory = C:\Users\Korisnik\Documents\Cetvrti semestar\Teatar18-grupa5-tim18\Implementacija\Teatar18_2\Teatar18_2
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmak_4nlq9kx/Documents/GitHub/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/Kupovina.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/Kupovina.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcS3Vwb3ZpbmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmak_4nlq9kx/Documents/GitHub/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/OtkazivanjeRezervacije.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/OtkazivanjeRezervacije.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcT3RrYXppdmFuamVSZXplcnZhY2lqZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmak_4nlq9kx/Documents/GitHub/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/Rezervacije.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/Rezervacije.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmV6ZXJ2YWNpamUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Home/Index.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Home/Privacy.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Home/ONamaView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPTmFtYVZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Home/PocetnaView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb2NldG5hVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Create.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXp2ZWRiYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Delete.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXp2ZWRiYVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Details.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXp2ZWRiYVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Edit.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXp2ZWRiYVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Index.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXp2ZWRiYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/IzmjenaRepertoara.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/IzmjenaRepertoara.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXp2ZWRiYVxJem1qZW5hUmVwZXJ0b2FyYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Repertoar.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Izvedba/Repertoar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXp2ZWRiYVxSZXBlcnRvYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Newsletter/Create.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Newsletter/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c2xldHRlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Newsletter/Delete.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Newsletter/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c2xldHRlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Newsletter/Details.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Newsletter/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c2xldHRlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Newsletter/Edit.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Newsletter/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c2xldHRlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Newsletter/Index.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Newsletter/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c2xldHRlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/OcjenaPredstave/Create.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/OcjenaPredstave/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NqZW5hUHJlZHN0YXZlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/OcjenaPredstave/Delete.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/OcjenaPredstave/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NqZW5hUHJlZHN0YXZlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/OcjenaPredstave/Details.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/OcjenaPredstave/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NqZW5hUHJlZHN0YXZlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/OcjenaPredstave/Edit.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/OcjenaPredstave/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NqZW5hUHJlZHN0YXZlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/OcjenaPredstave/Index.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/OcjenaPredstave/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NqZW5hUHJlZHN0YXZlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/Create.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl0YW5qYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/Delete.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl0YW5qYVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/Details.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl0YW5qYVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/Edit.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl0YW5qYVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/Index.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl0YW5qYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/OdgovaranjeNaPitanja.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/OdgovaranjeNaPitanja.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl0YW5qYVxPZGdvdmFyYW5qZU5hUGl0YW5qYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/PostavljanjePitanja.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Pitanja/PostavljanjePitanja.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGl0YW5qYVxQb3N0YXZsamFuamVQaXRhbmphLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Create.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZHN0YXZhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Delete.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZHN0YXZhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Details.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZHN0YXZhXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Edit.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZHN0YXZhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Index.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZHN0YXZhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Predstava.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Predstava/Predstava.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZHN0YXZhXFByZWRzdGF2YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Create.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Delete.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Details.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Edit.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Index.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Kupovina.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/Kupovina.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcS3Vwb3ZpbmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmak_4nlq9kx/Documents/GitHub/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/NedovoljnoKarata.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Rezervacija/NedovoljnoKarata.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV6ZXJ2YWNpamFcTmVkb3ZvbGpub0thcmF0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/esmak_4nlq9kx/Documents/GitHub/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Shared/Error.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/_ViewImports.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/_ViewStart.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Korisnik/ETF_LV/OOAD/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Shared/_Layout.cshtml]
+[C:/Users/Korisnik/Documents/Cetvrti semestar/Teatar18-grupa5-tim18/Implementacija/Teatar18_2/Teatar18_2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z4yosqq17y

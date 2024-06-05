@@ -8606,11 +8606,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
+      "projectUniqueName": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
       "projectName": "Teatar18_2",
-      "projectPath": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
+      "projectPath": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
       "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\obj\\",
+      "outputPath": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8694,7 +8694,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
