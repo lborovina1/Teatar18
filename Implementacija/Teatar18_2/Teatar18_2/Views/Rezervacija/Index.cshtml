@@ -1,31 +1,37 @@
 ﻿@model IEnumerable<Teatar18_2.Models.Rezervacija>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Sve rezervacije";
 }
 
-<h1>Index</h1>
+<h1>@ViewData["Title"]</h1>
 
-<p>
-    <a asp-action="KreirajRezervaciju">Kreiraj rezervaciju</a>
-</p>
+<div>
+    <form asp-action="OtkaziNeplaceneRezervacije" method="post">
+        <button type="submit" class="btn btn-primary">Otkaži neplaćene rezervacije</button>
+    </form>
+</div>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.kupovina)
+                ID
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.brojKarata)
+                Plaćena
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.popust)
+                Broj karata
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.aktivna)
+                Aktivna
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Izvedba)
+                Predstava
+            </th>
+            <th>
+                Vrijeme
             </th>
             <th></th>
         </tr>
@@ -34,25 +40,30 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.kupovina)
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @(item.kupovina ? "Da" : "Ne")
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.brojKarata)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.popust)
+                @(item.aktivna ? "Da" : "Ne")
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.aktivna)
+                @Html.DisplayFor(modelItem => item.Izvedba.Predstava.naziv)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Izvedba.ID)
+                @Html.DisplayFor(modelItem => item.Izvedba.vrijeme)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="OtkaziRezervaciju" asp-route-id="@item.ID">Otkazi</a>
-            </td>
+            @if(item.aktivna && item.kupovina == false)
+            {
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Postavi plaćeno</a> |
+                    <a asp-action="OtkaziRezervaciju" asp-route-id="@item.ID">Otkaži</a>
+                </td>
+            }   
         </tr>
 }
     </tbody>

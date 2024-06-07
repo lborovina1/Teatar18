@@ -1,34 +1,59 @@
-﻿@model Teatar18_2.Models.Rezervacija
+﻿@model Teatar18_2.Models.RezervacijaViewModel
 
 @{
-    ViewData["Title"] = "Placanje";
+    ViewData["Title"] = "Plaćanje";
 }
 
-<h1>Placanje</h1>
-
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
+        <h3>@ViewData["Title"]</h3>
         <form asp-action="PlatiRezervaciju">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ID" />
+            <input type="hidden" asp-for="Rezervacija.ID" />
+            <input type="hidden" asp-for="Rezervacija.IDIzvedbe" />
+            <input type="hidden" asp-for="Rezervacija.kupovina" />
+            <input type="hidden" asp-for="Rezervacija.brojKarata" />
+            <input type="hidden" asp-for="Rezervacija.popust" />
+            <input type="hidden" asp-for="Rezervacija.aktivna" />
 
-            <input type="hidden" asp-for="IDIzvedbe" />
+            @if (Model.Rezervacija.popust != 0)
+            {
+                <div>
+                    <p>Popust: @(Model.Rezervacija.popust * 100)%</p>
+                </div>
+            }
 
-            <input type="hidden" asp-for="kupovina" />
-
-            <div>
-                <h5>Metode placanja i ostalo...</h5>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.CreditCardNo" class="form-control" aria-required="true" />
+                <label asp-for="Input.CreditCardNo" class="form-label"></label>
+                <span asp-validation-for="Input.CreditCardNo" class="text-danger"></span>
             </div>
-            
-            <input type="hidden" asp-for="brojKarata" />
 
-            <input type="hidden" asp-for="popust" />
+            <div class="form-floating mb-3">
+                <input asp-for="Input.CVC" class="form-control" aria-required="true" />
+                <label asp-for="Input.CVC" class="form-label"></label>
+                <span asp-validation-for="Input.CVC" class="text-danger"></span>
+            </div>
 
-            <input type="hidden" asp-for="aktivna" />
+            <div class="form-floating mb-3">
+                <input asp-for="Input.ExpirationDate" class="form-control" aria-required="true" />
+                <label asp-for="Input.ExpirationDate" class="form-label"></label>
+                <span asp-validation-for="Input.ExpirationDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.CardholderName" class="form-control" aria-required="true" />
+                <label asp-for="Input.CardholderName" class="form-label"></label>
+                <span asp-validation-for="Input.CardholderName" class="text-danger"></span>
+            </div>
 
             <div class="form-group">
-                <input type="submit" value="Plati" class="btn btn-primary" />
+                <input type="submit" value="Plati" class="w-100 btn btn-lg btn-primary" />
             </div>
         </form>
     </div>
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -59,7 +59,7 @@ namespace Teatar18_2.Areas.Identity.Pages.Account.Manage
                 return Page();
             }
 
-            return RedirectToPage("Index");
+            return RedirectToPage("AktivneRezervacije");
         }
     }
 }
