@@ -31,8 +31,7 @@
             padding: 10px;
             text-align: center;
             width: 250px;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin: 20px;
             height: 432px;
             border: 1px solid #555;
         }
@@ -57,8 +56,8 @@
 
         .repertoire {
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
+            justify-content: center; 
         }
 
         .play-card a {
@@ -75,39 +74,41 @@
 </head>
 <body>
     <h2>Repertoar</h2>
-    <div class="container">
-        <div class="repertoire">
-            @foreach (var predstava in Model)
-            {
-                string najranijaIzvedbaUrl = Url.Action("dajNajranijuIzvedbu", "Izvedba", new { PredstavaID = predstava.ID });
+    <center>
+        <div class="container">
+            <div class="repertoire">
+                @foreach (var predstava in Model)
+                {
+                    string najranijaIzvedbaUrl = Url.Action("dajNajranijuIzvedbu", "Izvedba", new { PredstavaID = predstava.ID });
 
-                <div class="play-card">
-                    <a href="@Url.Action("pregledPredstave", "Izvedba", new { predstavaID = predstava.ID })">
-                        <img src="@predstava.poster" alt="@predstava.naziv poster">
-                        <h3>@predstava.naziv</h3>
-                        <p>@predstava.zanr</p>
-                        <p><span id="izvedba_@predstava.ID"></span></p>
-                    </a>
-                </div>
+                    <div class="play-card">
+                        <a href="@Url.Action("pregledPredstave", "Izvedba", new { predstavaID = predstava.ID })">
+                            <img src="@predstava.poster" alt="@predstava.naziv poster">
+                            <h3>@predstava.naziv</h3>
+                            <p>@predstava.zanr</p>
+                            <p><span id="izvedba_@predstava.ID"></span></p>
+                        </a>
+                    </div>
 
-                <script>
-                    $(document).ready(function () {
-                        $.ajax({
-                            url: '@najranijaIzvedbaUrl',
-                            success: function (result) {
-                                $('#izvedba_@predstava.ID').text(result);
-                            },
-                            error: function (xhr, status, error) {
-                                console.log("Error: " + error);
-                                console.log("Status: " + status);
-                                console.dir(xhr);
-                            }
+                    <script>
+                        $(document).ready(function () {
+                            $.ajax({
+                                url: '@najranijaIzvedbaUrl',
+                                success: function (result) {
+                                    $('#izvedba_@predstava.ID').text(result);
+                                },
+                                error: function (xhr, status, error) {
+                                    console.log("Error: " + error);
+                                    console.log("Status: " + status);
+                                    console.dir(xhr);
+                                }
+                            });
                         });
-                    });
-                </script>
-            }
+                    </script>
+                }
+            </div>
         </div>
-    </div>
+    </center>
     <div>&nbsp;</div>
     <div>&nbsp;</div>
     <div>&nbsp;</div>
