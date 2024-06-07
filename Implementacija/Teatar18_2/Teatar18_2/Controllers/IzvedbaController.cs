@@ -245,7 +245,7 @@ namespace Teatar18_2.Controllers
             try
             {
                 var izvedbe = _context.Izvedba
-                                      .Where(p => p.IDPredstave == PredstavaID)
+                                      .Where(p => p.IDPredstave == PredstavaID && p.vrijeme > DateTime.Now)
                                       .Select(p => p.vrijeme)
                                       .ToList();
 

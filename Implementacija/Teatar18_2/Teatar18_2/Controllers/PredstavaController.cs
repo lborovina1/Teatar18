@@ -192,5 +192,15 @@ namespace Teatar18_2.Controllers
 
             return najbolje;
         }
+
+        public async Task<IActionResult> Rezervisi(int predstavaID)
+        {
+            var izvedbe = await _context.Izvedba
+                .Where(i => i.IDPredstave == predstavaID && i.vrijeme > DateTime.Now)
+                .OrderBy(i => i.vrijeme)
+                .ToListAsync();
+
+            return View(izvedbe);
+        }
     }
 }

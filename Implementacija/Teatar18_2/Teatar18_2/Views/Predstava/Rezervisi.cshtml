@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Teatar18_2.Models.Izvedba>
+
+@{
+    ViewData["Title"] = "Izvedbe";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if(Model.Count() == 0)
+{
+    <h3>Nema dostupnih izvedbi za ovu predstavu.</h3>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Vrijeme
+                </th>
+                <th>
+                    Broj slobodnih karata
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.vrijeme)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.brojSlobodnihKarata)
+                    </td>
+                    @if (item.brojSlobodnihKarata > 0)
+                    {
+                        <td>
+                            <form asp-controller="Rezervacija" asp-action="KreirajRezervaciju" method="get">
+                                <input type="hidden" name="id" value="@item.ID" />
+                                <button type="submit" class="btn btn-primary">Rezerviši</button>
+                            </form>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
