@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\views\\izvedba\\izmjenarepertoara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\views\\izvedba\\izmjenarepertoara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\views\\izvedba\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\views\\izvedba\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\controllers\\izvedbacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\controllers\\izvedbacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\models\\predstava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\predstava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\controllers\\predstavacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\controllers\\predstavacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\views\\izvedba\\izmjenarepertoara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\views\\izvedba\\izmjenarepertoara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\views\\izvedba\\predstava.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +58,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Views\\Izvedba\\Create.cshtml",
+              "RelativeDocumentMoniker": "Teatar18_2\\Views\\Izvedba\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Views\\Izvedba\\Create.cshtml",
+              "RelativeToolTip": "Teatar18_2\\Views\\Izvedba\\Create.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T21:08:09.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Predstava.cs",
+              "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Models\\Predstava.cs",
+              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Predstava.cs",
+              "ToolTip": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Models\\Predstava.cs",
+              "RelativeToolTip": "Teatar18_2\\Models\\Predstava.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T21:06:27.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PredstavaController.cs",
+              "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\PredstavaController.cs",
+              "RelativeDocumentMoniker": "Teatar18_2\\Controllers\\PredstavaController.cs",
+              "ToolTip": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\PredstavaController.cs",
+              "RelativeToolTip": "Teatar18_2\\Controllers\\PredstavaController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T21:06:22.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Predstava.cshtml",
               "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Views\\Izvedba\\Predstava.cshtml",
               "RelativeDocumentMoniker": "Teatar18_2\\Views\\Izvedba\\Predstava.cshtml",
@@ -58,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Repertoar.cshtml",
               "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Views\\Izvedba\\Repertoar.cshtml",
               "RelativeDocumentMoniker": "Teatar18_2\\Views\\Izvedba\\Repertoar.cshtml",
@@ -76,19 +127,20 @@
               "RelativeDocumentMoniker": "Teatar18_2\\Controllers\\IzvedbaController.cs",
               "ToolTip": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\IzvedbaController.cs",
               "RelativeToolTip": "Teatar18_2\\Controllers\\IzvedbaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOAAAABUAAAA",
+              "ViewState": "AQIAALQAAAAAAAAAAAAiwOAAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T19:39:48.65Z"
+              "WhenOpened": "2024-06-06T19:39:48.65Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "IzmjenaRepertoara.cshtml",
               "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Views\\Izvedba\\IzmjenaRepertoara.cshtml",
               "RelativeDocumentMoniker": "Teatar18_2\\Views\\Izvedba\\IzmjenaRepertoara.cshtml",
               "ToolTip": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Views\\Izvedba\\IzmjenaRepertoara.cshtml",
               "RelativeToolTip": "Teatar18_2\\Views\\Izvedba\\IzmjenaRepertoara.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAFIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-06T21:44:21.812Z",
               "EditorCaption": ""
