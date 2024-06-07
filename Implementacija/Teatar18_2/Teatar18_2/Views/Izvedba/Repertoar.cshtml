@@ -2,12 +2,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repertoar - Teatar18</title>
     <style>
         body {
+            font-family: Times New Roman, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -29,8 +31,9 @@
             padding: 10px;
             text-align: center;
             width: 250px;
-            margin-bottom: 40px;
-            height: 385px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: 432px;
             border: 1px solid #555;
         }
 
@@ -58,41 +61,55 @@
             flex-wrap: wrap;
         }
 
-        .empty-row {
-            height: 40px;
-        }
-
-        .no-underline {
-            color: black;
+        .play-card a {
             text-decoration: none;
+            color: black;
         }
 
-        .slika {
-            margin-bottom: 12px;
-        }
-
+            .play-card a:hover {
+                text-decoration: none;
+                color: black;
+            }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <h3>Repertoar</h3>
+    <h2>Repertoar</h2>
     <div class="container">
         <div class="repertoire">
             @foreach (var predstava in Model)
             {
+                string najranijaIzvedbaUrl = Url.Action("dajNajranijuIzvedbu", "Izvedba", new { PredstavaID = predstava.ID });
+
                 <div class="play-card">
-                    <a href="@Url.Action("pregledPredstave", "Izvedba", new { predstavaID = predstava.ID })" class="no-underline">
-                        <img src="@predstava.poster" alt="@predstava.naziv poster", class="slika">
-                        <h4>@predstava.naziv</h4>
+                    <a href="@Url.Action("pregledPredstave", "Izvedba", new { predstavaID = predstava.ID })">
+                        <img src="@predstava.poster" alt="@predstava.naziv poster">
+                        <h3>@predstava.naziv</h3>
                         <p>@predstava.zanr</p>
+                        <p><span id="izvedba_@predstava.ID"></span></p>
                     </a>
                 </div>
+
+                <script>
+                    $(document).ready(function () {
+                        $.ajax({
+                            url: '@najranijaIzvedbaUrl',
+                            success: function (result) {
+                                $('#izvedba_@predstava.ID').text(result);
+                            },
+                            error: function (xhr, status, error) {
+                                console.log("Error: " + error);
+                                console.log("Status: " + status);
+                                console.dir(xhr);
+                            }
+                        });
+                    });
+                </script>
             }
         </div>
-        <div>
-            <div class="empty-row">
-                <p>&nbsp;</p>
-            </div>
-        </div>
     </div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
 </body>
 </html>

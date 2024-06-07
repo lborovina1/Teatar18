@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\views\\izvedba\\izmjenarepertoara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\views\\izvedba\\izmjenarepertoara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\views\\izvedba\\repertoar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\views\\izvedba\\repertoar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\views\\izvedba\\predstava.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\views\\izvedba\\predstava.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\views\\izvedba\\repertoar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\views\\izvedba\\repertoar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\controllers\\izvedbacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\controllers\\izvedbacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\lamij\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\views\\izvedba\\izmjenarepertoara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\views\\izvedba\\izmjenarepertoara.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,26 +46,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Repertoar.cshtml",
               "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Views\\Izvedba\\Repertoar.cshtml",
               "RelativeDocumentMoniker": "Teatar18_2\\Views\\Izvedba\\Repertoar.cshtml",
               "ToolTip": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Views\\Izvedba\\Repertoar.cshtml",
               "RelativeToolTip": "Teatar18_2\\Views\\Izvedba\\Repertoar.cshtml",
-              "ViewState": "AQIAADwAAAAAAAAAAADwv2IAAAAAAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAAAG4AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-07T16:33:20.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "IzvedbaController.cs",
               "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\IzvedbaController.cs",
               "RelativeDocumentMoniker": "Teatar18_2\\Controllers\\IzvedbaController.cs",
               "ToolTip": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\IzvedbaController.cs",
               "RelativeToolTip": "Teatar18_2\\Controllers\\IzvedbaController.cs",
-              "ViewState": "AQIAAKMAAAAAAAAAAAAQwK8AAAAsAAAA",
+              "ViewState": "AQIAAOwAAAAAAAAAAAAuwPMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T19:39:48.65Z",
               "EditorCaption": ""
@@ -78,14 +78,14 @@
               "RelativeDocumentMoniker": "Teatar18_2\\Views\\Izvedba\\Predstava.cshtml",
               "ToolTip": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Views\\Izvedba\\Predstava.cshtml",
               "RelativeToolTip": "Teatar18_2\\Views\\Izvedba\\Predstava.cshtml",
-              "ViewState": "AQIAAHQAAAAAAAAAAADwv4IAAAAjAAAA",
+              "ViewState": "AQIAAHQAAAAAAAAAAADwv34AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-06T09:51:08.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "IzmjenaRepertoara.cshtml",
               "DocumentMoniker": "C:\\Users\\lamij\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Views\\Izvedba\\IzmjenaRepertoara.cshtml",
               "RelativeDocumentMoniker": "Teatar18_2\\Views\\Izvedba\\IzmjenaRepertoara.cshtml",
