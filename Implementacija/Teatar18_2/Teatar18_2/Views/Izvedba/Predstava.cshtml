@@ -1,0 +1,154 @@
+﻿@model Teatar18_2.Models.Predstava
+
+@{
+    ViewData["Title"] = "Predstava";
+    string trajanje = Model.trajanje + " min";
+    string ocjenaUrl = Url.Action("izracunajProsjecnuOcjenu", "Predstava", new { predstavaID = Model.ID });
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Model.naziv</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            padding: 0px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 0px;
+        }
+
+        .col {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .col-3 {
+            flex: 0 0 30%;
+            max-width: 30%;
+        }
+
+        .col-3 {
+            flex: 0 0 32%;
+            max-width: 32%;
+        }
+
+        .col-2{
+            flex: 0 0 18%;
+            max-width: 18%;
+        }
+
+        .col-6 {
+            flex: 0 0 35%;
+            max-width: 35%;
+        }
+
+        .col-9 {
+            flex: 0 0 41%;
+            max-width: 41%;
+        }
+
+        .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .play-card {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: left;
+            height: 100%;
+            border: 1px solid #555;
+        }
+
+        .btn-reserve {
+            display: block;
+            width: 70%;
+            padding: 10px;
+            background-color: #a10000;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+            .btn-reserve:hover {
+                background-color: #850000;
+            }
+
+        .custom-image {
+            max-width: 70%; /* Adjust this percentage as needed */
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-2">
+                <h3>@Model.naziv</h3>
+                <p>@Model.zanr</p>
+            </div>
+            <div class="col col-9">
+                <div><h3>&nbsp;</h3></div>
+                <p>@trajanje</p>
+            </div>
+            <div class="col col-3">
+                <div><h3>&nbsp;</h3></div>
+                <p>Ocjena: <span id="ocjena"></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-3">
+                <div class="play-card">
+                    <p>Režiser: @Model.reziseri</p>
+                    <p>Scenarist: @Model.scenaristi</p>
+                    <p>Scenograf: @Model.scenografi</p>
+                    <p>Glumci: @Model.glumci</p>
+                </div>
+            </div>
+            <div class="col col-6">
+                <div class="play-card">
+                    <h4>Opis</h4>
+                    <div>&nbsp;</div>
+                    <p> @Model.opis </p>
+                </div>
+            </div>
+            <div class="col col-3">
+                <img src="@Model.poster" alt="@Model.naziv poster" class="custom-image">
+                <a href="@Url.Action("Rezervisi", "Predstava", new { predstavaID = Model.ID })" class="btn-reserve">Rezerviši</a>
+            </div>
+        </div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: '@ocjenaUrl',
+                success: function (result) {
+                    $('#ocjena').text(result);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

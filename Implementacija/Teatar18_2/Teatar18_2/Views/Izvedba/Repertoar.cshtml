@@ -1,7 +1,98 @@
-﻿
-@{
-    ViewData["Title"] = "Repertoar";
-}
+﻿@model IEnumerable<Teatar18_2.Models.Predstava>
 
-<h1>Repertoar</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repertoar - Teatar18</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
+        .header {
+            background-color: #a10000;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+            .header h1 {
+                margin: 0;
+            }
+
+        .play-card {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+            width: 250px;
+            margin-bottom: 40px;
+            height: 385px;
+            border: 1px solid #555;
+        }
+
+            .play-card img {
+                max-width: 90%;
+                height: auto;
+            }
+
+            .play-card h3, .play-card p {
+                margin: 10px 0;
+            }
+
+        .scrollable-content {
+            height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+
+        .container {
+            padding: 18px;
+        }
+
+        .repertoire {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .empty-row {
+            height: 40px;
+        }
+
+        .no-underline {
+            color: black;
+            text-decoration: none;
+        }
+
+        .slika {
+            margin-bottom: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Repertoar</h3>
+    <div class="container">
+        <div class="repertoire">
+            @foreach (var predstava in Model)
+            {
+                <div class="play-card">
+                    <a href="@Url.Action("pregledPredstave", "Izvedba", new { predstavaID = predstava.ID })" class="no-underline">
+                        <img src="@predstava.poster" alt="@predstava.naziv poster", class="slika">
+                        <h4>@predstava.naziv</h4>
+                        <p>@predstava.zanr</p>
+                    </a>
+                </div>
+            }
+        </div>
+        <div>
+            <div class="empty-row">
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

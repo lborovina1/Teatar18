@@ -26,17 +26,6 @@ namespace Teatar18_2.Controllers
             return View(await _context.Predstava.ToListAsync());
         }
 
-        // Poziva se iz repertoara za detaljniji pregled jedne predstave
-        public IActionResult pregledPredstave(int predstavaID)
-        {
-            var predstava = _context.Predstava.FirstOrDefault(p => p.ID == predstavaID);
-            if (predstava == null)
-            {
-                return NotFound();
-            }
-            return View("Predstava", predstava);
-        }
-
         // GET: Predstava/Details/5
         public async Task<IActionResult> Details(int? id)
         {

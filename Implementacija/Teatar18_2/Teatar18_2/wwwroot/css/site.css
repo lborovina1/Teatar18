@@ -19,4 +19,9 @@ html {
 
 body {
   margin-bottom: 60px;
+  font-family: var(--my-primary-font-family);
+}
+
+:root{
+    --my-primary-font-family: Georgia, serif;
 }

@@ -167,10 +167,20 @@ namespace Teatar18_2.Controllers
 
         public IActionResult pregledRepertoara()
         {
-            var predstaveUIzvedbama = _context.Izvedba.Select(p => p.IDPredstave).ToList();
-            var predstave = _context.Predstava.Where(p => predstaveUIzvedbama.Contains(p.ID)).ToList();
+            var predstave = _context.Predstava.Where(p => p.uRepertoaru).ToList();
 
             return View("Repertoar", predstave);
+        }
+
+        // Poziva se iz repertoara za detaljniji pregled jedne predstave
+        public IActionResult pregledPredstave(int predstavaID)
+        {
+            var predstava = _context.Predstava.Find(predstavaID);
+            if (predstava == null)
+            {
+                return NotFound();
+            }
+            return View("Predstava", predstava);
         }
 
         public async Task generisiKarteZaIzvedbu(int izvedbaID, int brojKarata, double cijena)
@@ -227,6 +237,30 @@ namespace Teatar18_2.Controllers
                 await _context.SaveChangesAsync();
             }
             return RedirectToAction("pregledRepertoara");
+        }
+
+        [HttpGet]
+        public IActionResult dajNajranijuIzvedbu(int PredstavaID)
+        {
+            try
+            {
+                var izvedbe = _context.Izvedba
+                                      .Where(p => p.IDPredstave == PredstavaID)
+                                      .Select(p => p.vrijeme)
+                                      .ToList();
+
+                if (!izvedbe.Any())
+                {
+                    return Json("Nema izvedbi");
+                }
+
+                var najranijaIzvedba = izvedbe.Min();
+                return Json(najranijaIzvedba.ToString("dd.MM.yyyy HH:mm")); 
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error: " + ex.Message);
+            }
         }
     }
 }
