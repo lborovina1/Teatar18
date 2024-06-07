@@ -19,8 +19,10 @@ builder.Services.AddDefaultIdentity<Korisnik>(options => options.SignIn.RequireC
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
+//services
 builder.Services.AddScoped<RezervacijaService>();
 builder.Services.AddScoped<PredstavaService>();
+builder.Services.AddScoped<OcjenaPredstaveService>();
 
 var app = builder.Build();
 

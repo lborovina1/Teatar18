@@ -133,5 +133,25 @@ namespace Teatar18_2.Services
 
             return true;
         }
+
+        public async Task<bool> OtkaziNeplaceneRezervacije()
+        {
+            var rezervacije = await _context.Rezervacija
+                .Where(r => r.aktivna == true)
+                .Include(r => r.Izvedba)
+                .ToListAsync();
+
+            if (rezervacije == null)
+                return false;
+
+            foreach(var rezervacija in rezervacije)
+            {
+                if (rezervacija.kupovina == false && rezervacija.Izvedba.vrijeme <= DateTime.Now.AddDays(2))
+                    await OtkaziRezervaciju(rezervacija.ID);
+            }
+            await _context.SaveChangesAsync();
+
+            return true;
+        }
     }
 }

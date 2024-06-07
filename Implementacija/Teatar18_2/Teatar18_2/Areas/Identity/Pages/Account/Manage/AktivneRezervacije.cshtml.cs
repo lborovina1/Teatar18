@@ -15,14 +15,14 @@ using Teatar18_2.Services;
 
 namespace Teatar18_2.Areas.Identity.Pages.Account.Manage
 {
-    public class RezervacijeModel: PageModel
+    public class AktivneRezervacijeModel: PageModel
     {
         private readonly UserManager<Korisnik> _userManager;
         private readonly SignInManager<Korisnik> _signInManager;
         private readonly ApplicationDbContext _context;
         private readonly RezervacijaService _rezervacijaService;
 
-        public RezervacijeModel(
+        public AktivneRezervacijeModel(
             UserManager<Korisnik> userManager,
             SignInManager<Korisnik> signInManager,
             ApplicationDbContext context,
@@ -37,14 +37,56 @@ namespace Teatar18_2.Areas.Identity.Pages.Account.Manage
         [TempData]
         public string StatusMessage { get; set; }
         public List<Rezervacija> Rezervacije { get; set; }
-
+        public List<(Rezervacija, List<Karta>)> KarteRezervacije { get; set; } = new List<(Rezervacija, List<Karta>)>();
+        
         private async Task LoadAsync(Korisnik user)
         {
             var rezervacije = await _context.Rezervacija
-                .Where(r => r.IDKorisnika == user)
+                .Where(r => r.IDKorisnika == user && r.aktivna == true)
+                .Include(r => r.Izvedba)
+                .ThenInclude(i => i.Predstava)
                 .ToListAsync();
 
+            //==provjeri koje rezervacije su istekle / trebaju se automatski otkazati==
+
+            var rezervacijeZaOtkazivanje = new List<Rezervacija>();
+            
+            foreach (var rezervacija in rezervacije)
+            {
+                if (rezervacija.kupovina == false && rezervacija.Izvedba.vrijeme <= DateTime.Now.AddDays(2))
+                {
+                    rezervacijeZaOtkazivanje.Add(rezervacija);
+                }
+
+                else if (rezervacija.Izvedba.vrijeme < DateTime.Now)
+                {
+                    rezervacija.aktivna = false;
+                    _context.Update(rezervacija);
+                }  
+            }
+            await _context.SaveChangesAsync();
+
+            //==filtriranje po aktivnim/validnim==
+
+            rezervacije.RemoveAll(r => r.aktivna == false);     
+            
+            foreach(var rezervacija in rezervacijeZaOtkazivanje)    
+            {
+                rezervacije.Remove(rezervacija);
+                await _rezervacijaService.OtkaziRezervaciju(rezervacija.ID);
+            }
+
             Rezervacije = rezervacije;
+
+            //==vezi karte uz rezervacije==
+            
+            foreach(var rezervacija in rezervacije)
+            {
+                KarteRezervacije.Add((rezervacija, await _context.Karta
+                    .Where(k => k.IDRezervacije == rezervacija.ID)
+                    .Include(k => k.Rezervacija)
+                    .ToListAsync()));
+            }
         }
 
         public async Task<IActionResult> OnGetAsync()
@@ -52,7 +94,7 @@ namespace Teatar18_2.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound("Unable to load user");
             }
 
             await LoadAsync(user);

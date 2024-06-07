@@ -4,10 +4,11 @@
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
 }
 <ul class="nav nav-pills flex-column">
-    <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profile</a></li>
+    <li class="nav-item"><a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profil</a></li>
     <li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li>
     <li class="nav-item"><a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">Password</a></li>
-    <li class="nav-item"><a class="nav-link @ManageNavPages.RezervacijeNavClass(ViewContext)" id="rezervacije" asp-page="./Rezervacije">Rezervacije</a></li>
+    <li class="nav-item"><a class="nav-link @ManageNavPages.AktivneRezervacijeNavClass(ViewContext)" id="rezervacije" asp-page="./AktivneRezervacije">Aktivne rezervacije</a></li>
+    <li class="nav-item"><a class="nav-link @ManageNavPages.IstekleRezervacijeNavClass(ViewContext)" id="rezervacije" asp-page="./IstekleRezervacije">Istekle rezervacije</a></li>
     @if (hasExternalLogins)
     {
         <li id="external-logins" class="nav-item"><a id="external-login" class="nav-link @ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins">External logins</a></li>

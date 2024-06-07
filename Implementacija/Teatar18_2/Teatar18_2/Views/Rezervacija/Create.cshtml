@@ -1,46 +1,48 @@
-﻿@model Teatar18_2.Models.Rezervacija
+﻿@model Teatar18_2.Models.KarteRezervacijaViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Kreiraj rezervaciju";
 }
 
-<h1>Create</h1>
+<h1>@ViewData["Title"]</h1>
 
-<h4>Rezervacija</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="KreirajRezervaciju">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
-            <input type="hidden" asp-for="IDIzvedbe" />
+        <form asp-action="KreirajRezervacijuConfirmed" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>            
+            <input type="hidden" asp-for="Rezervacija.IDIzvedbe" />
+            <input type="hidden" asp-for="Izvedba.ID" />
+            <input type="hidden" asp-for="Izvedba.IDPredstave" />
+            <input type="hidden" asp-for="Izvedba.vrijeme" />
+            <input type="hidden" asp-for="Izvedba.brojSlobodnihKarata" />
 
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="kupovina" /> @Html.DisplayNameFor(model => model.kupovina)
+                    <input class="form-check-input" asp-for="Rezervacija.kupovina" /> Kupovina
                 </label>
             </div>
+
             <div class="form-group">
-                <label asp-for="brojKarata" class="control-label"></label>
-                <input asp-for="brojKarata" class="form-control" />
-                <span asp-validation-for="brojKarata" class="text-danger"></span>
+                <label asp-for="Rezervacija.brojKarata" class="control-label">Broj karata</label>
+                <select asp-for="Rezervacija.brojKarata" class="form-control">
+                    @for (int i = 1; i <= Model.Izvedba.brojSlobodnihKarata; i++)
+                    {
+                        <option value="@i">@i</option>
+                    }
+                </select>
+                <span asp-validation-for="Rezervacija.brojKarata" class="text-danger"></span>
             </div>
-            
-            <input type="hidden" asp-for="popust" />
-
-            <input type="hidden" asp-for="aktivna" />
-
+            <br />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Kreiraj rezervaciju" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
