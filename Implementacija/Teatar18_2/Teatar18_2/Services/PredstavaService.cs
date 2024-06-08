@@ -42,7 +42,7 @@ namespace Teatar18_2.Services
 
             var najbolje = predstaveOcjene
                 .OrderByDescending(e => e.prosjecnaOcjena)
-                .Take(3)
+                .Take(4)
                 .Select(e => e.predstava)
                 .ToList();
 

@@ -1,6 +1,82 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "O nama";
 }
 <h1>@ViewData["Title"]</h1>
+<br>
+<br>
+<div class="table">
+    <div class="left-column">
+        <div class="historija">
+            <h2>Historija</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+        <div class="tehnicke-informacije">
+            <h2>Tehničke informacije</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+    </div>
+    <div class="right-column">
+        <div class="radno-vrijeme">
+            <h2>Radno vrijeme</h2>
+            <p>
+                Ponedjeljak - Peta: 15:00 - 22:00
+                <br>
+                Subota: 15:00 - 23:00
+                <br>
+                Nedjelja i praznici - neradni
+            </p>
+        </div>
+        <div class="kontakt">
+            <h2>Kontakt</h2>
+            <p>
+                E-mail : teatar18.5@gmail.com
+                <br>
+                Telefon: +387 33 530 174
+                <br>
+                Fax: +387 33 226 803
+                <br>
+                Blagajna: +387 33 530 776
+            </p>
+        </div>
+        <div class="lokacija">
+            <h2>Lokacija</h2>
+            <p>
+                Zmaja od Bosne 8b
+                <br>
+                71 000 Sarajevo, BiH
+            </p>
+        </div>
+    </div>
+</div>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<style>
+    .table {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left-column, .right-column {
+        width: 40%;
+    }
+
+    .left-column {
+        text-align: left;
+    }
+
+    .right-column {
+        text-align: left;
+    }
+
+        .left-column > div,
+        .right-column > div {
+            margin-bottom: 20px;
+        }
+</style>

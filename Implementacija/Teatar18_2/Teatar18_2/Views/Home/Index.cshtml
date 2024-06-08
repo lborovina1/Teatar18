@@ -1,8 +1,103 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model List<Predstava>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatar18</title>
+    <style>
+       
+
+        .header {
+            color: white;
+            
+        }
+
+            .header h1 {
+                margin: 0;
+            }
+
+        .play-card {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+            width: 250px;
+            margin: 20px;
+            height: 432px;
+            border: 1px solid #555;
+        }
+
+            .play-card img {
+                max-width: 95%;
+                height: auto;
+            }
+
+            .play-card h3, .play-card p {
+                margin: 10px 0;
+            }
+
+
+
+        .container {
+            padding: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+
+        .play-card a {
+            text-decoration: none;
+            color: black;
+        }
+
+            .play-card a:hover {
+                text-decoration: none;
+                color: black;
+            }
+
+        .play-card h3 {
+            padding: 10%;
+        }
+
+        .repertoar_button {
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+            .repertoar_button button {
+                padding: 10px 20px;
+                background-color: #a10000;
+                color: white;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+
+        .repertoar-button button:hover {
+            background-color: #800000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <div class="container">
+        @foreach (var predstava in Model)
+        {
+            <div class="play-card">
+                <a href="@Url.Action("pregledPredstave", "Izvedba", new { predstavaID = predstava.ID })">
+                    <img src="@predstava.poster" alt="@predstava.naziv poster">
+                    <h3>@predstava.naziv</h3>
+                </a>
+            </div>
+        }
+    </div>
+    <div class="repertoar_button">
+        <button>
+            <a class="nav-link text-light" asp-area="" asp-controller="Izvedba" asp-action="pregledRepertoara">Repertoar</a>
+        </button>
+    </div>
+</body>

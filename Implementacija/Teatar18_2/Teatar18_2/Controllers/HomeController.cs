@@ -20,15 +20,12 @@ namespace Teatar18_2.Controllers
             _context = context;
             _predstavaService = predstavaService;
         }
-        public async Task<IActionResult> PristupiAplikaciji()
+
+
+        public async Task<IActionResult> Index()
         {
             var predstave = await _predstavaService.DajPreporuke();
-            return View("PocetnaView", predstave);
-        }
-
-        public IActionResult Index()
-        {
-            return View();
+            return View(predstave);
         }
 
         public IActionResult Privacy()
@@ -36,7 +33,8 @@ namespace Teatar18_2.Controllers
             return View();
         }
 
-        public IActionResult DajInformacijuOUstanovi() {
+        public IActionResult DajInformacijuOUstanovi()
+        {
             return View("ONamaView");
         }
 
