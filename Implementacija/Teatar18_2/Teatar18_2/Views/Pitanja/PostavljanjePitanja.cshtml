@@ -4,16 +4,19 @@
     ViewData["Title"] = "Postavljanje Pitanja";
 }
 
-<h2>Postavljanje Pitanja</h2>
+<h2>Postavljanje pitanja</h2>
 
 <form asp-action="PostavljanjePitanja">
-    <div class="form-group">
-        <label asp-for="predmet"></label>
-        <input asp-for="predmet" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="sadrzaj"></label>
-        <textarea asp-for="sadrzaj" class="form-control"></textarea>
-    </div>
-    <input type="submit" value="Postavi Pitanje" class="btn btn-primary" />
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="form-group">
+            <label asp-for="predmet"> Predmet </label>
+            <input asp-for="predmet" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="sadrzaj"> Sadrzaj</label>
+            <textarea asp-for="sadrzaj" class="form-control"></textarea>
+        </div>
+        <input type="submit" value="Postavi Pitanje" class="btn btn-primary" />
+    }
 </form>

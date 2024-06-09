@@ -9,9 +9,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Teatar18_2.Data;
 using Teatar18_2.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Teatar18_2.Controllers
 {
+    [Authorize]
     public class PitanjaController : Controller
     {
         private readonly ApplicationDbContext _context;

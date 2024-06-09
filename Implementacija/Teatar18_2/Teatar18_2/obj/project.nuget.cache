@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AbAZPrPuSgnMvISAIOJ8laegV+LqJxTXheCLtsu0Fr57OloiTAcOFhJ1mYdwJT5imfi1nnJE0ZN6GwFyydBSGA==",
+  "dgSpecHash": "3LwMPsJ/1n1CHDRDE/MqGgUVNTbJ2/pXMK8BWo7VnVz11pB57DQcCSuaNTuU3vn5/+S7oMEZ/FHi1KzaC7zWPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Korisnik\\Documents\\Cetvrti semestar\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
+  "projectFilePath": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Teatar18_2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Korisnik\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
