@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEFXTSOiyI0CC9BsKjfumlQAAAAACAAAAAAAQZgAAAAEAACAAAADAwGpvvM9lU8/WhbOdESIXVh+cNH+q3CdTdJHMSmH9/wAAAAAOgAAAAAIAACAAAAB0RfBdHf6V/LWAra+zz55IgabcKq6tGOS9cn3IH9Q4CiAAAAAQQBBBo7ShaHUPQt11JkkTOeJYSrSHdUqtUyGxROAbI0AAAACSjwO85DP10SUKpJ2zbCmU3Cib/aa+lNTjPqpTHgd16exGIQyDHx983ZAgJZt/pXzUsJdSVcmr+qEdWgYtirBr</EncryptedPassword>
+    <History>True|2024-06-10T21:19:49.2634803Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=SQL8010.site4now.net%3bInitial Catalog=db_aa8806_teatar18db%3bUser Id=db_aa8806_teatar18db_admin%3bPassword=TeataR18!</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

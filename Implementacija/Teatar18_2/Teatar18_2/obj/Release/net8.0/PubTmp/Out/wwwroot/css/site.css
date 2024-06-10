@@ -1,0 +1,182 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: var(--my-primary-font-family);
+    background-color: #f4f4f4;
+}
+
+:root {
+    --my-primary-color: #a30808;
+    --my-secondary-color: #e6e5e1;
+    --my-primary-text-color: #000000;
+    --my-secondary-text-color: #ffffff;
+    --my-grey-text-color: #575755;
+    --my-primary-font-family: Georgia, serif;
+    --my-hover-color: #660000;
+    --my-danger-color: #3d3c3c;
+    --my-danger-hover-color: #575555;
+}
+
+.my-navbar {
+    background-color: var(--my-primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.my-second-navbar {
+    background-color: var(--my-secondary-color);
+    height: 50px;
+    font-size: 18px;
+}
+
+.text-light {
+    color: var(--my-secondary-text-color);
+}
+
+.text-grey {
+    color: var(--my-grey-text-color);
+}
+
+    .text-grey:hover {
+        color: var(--my-grey-text-color);
+    }
+
+.logo {
+    width: auto;
+    height: 60px;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.my-navbar-brand {
+    font-size: 28px;
+}
+
+.my-button {
+    background-color: var(--my-primary-color);
+    border-color: var(--my-primary-color);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-size: 19px;
+}
+
+    .my-button:hover {
+        border-color: var(--my-hover-color);
+        background-color: var(--my-hover-color);
+    }
+
+.my-button-danger {
+    background-color: var(--my-danger-color);
+    border-color: var(--my-danger-color);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+    .my-button-danger:hover {
+        background-color: var(--my-danger-hover-color);
+        border-color: var(--my-danger-hover-color);
+    }
+
+.my-button-smaller {
+    background-color: var(--my-primary-color);
+    border-color: var(--my-primary-color);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+    .my-button-smaller:hover {
+        border-color: var(--my-hover-color);
+        background-color: var(--my-hover-color);
+    }
+
+.my-link {
+    color: black;
+    text-decoration: none;
+}
+
+    .my-link:hover {
+        color: var(--my-primary-color);
+        text-decoration: none;
+    }
+
+.my-red-link {
+    color: var(--my-primary-color);
+    text-decoration: none;
+}
+
+    .my-red-link:hover {
+        color: var(--my-hover-color);
+        text-decoration: none;
+    }
+
+.my-logout-button {
+    border: none;
+    color: var(--my-grey-text-color);
+    background-color: var(--my-secondary-color);
+}
+
+    .my-logout-button:hover {
+        border: none;
+        color: var(--my-grey-text-color);
+        background-color: var(--my-secondary-color);
+    }
+
+.my-identity-nav-item {
+    font-size: 16px;
+    color: var(--my-primary-color);
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .my-identity-nav-item {
+        transition: none;
+    }
+}
+
+    .my-identity-nav-item:hover, .my-identity-nav-item:focus {
+        color: var(--my-hover-color);
+    }
+
+    .my-identity-nav-item.active {
+        background-color: var(--my-primary-color);
+        color: white;
+    }
+
+.nav-pills .my-identity-nav-item {
+    background: none;
+    border: 0;
+    border-radius: 0.25rem;
+}
+
+    .nav-pills .my-identity-nav-item.active,
+    .nav-pills .show > .my-identity-nav-item {
+        color: #fff;
+        background-color: var(--my-primary-color);
+    }
+
