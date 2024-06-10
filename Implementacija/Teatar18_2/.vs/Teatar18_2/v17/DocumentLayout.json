@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\etf_lv\\ooad\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\controllers\\newslettercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\controllers\\newslettercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\etf_lv\\ooad\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\controllers\\pitanjacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\controllers\\pitanjacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\etf_lv\\ooad\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\models\\korisnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\etf_lv\\ooad\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\controllers\\newslettercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\controllers\\newslettercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|c:\\users\\korisnik\\etf_lv\\ooad\\teatar18-grupa5-tim18\\implementacija\\teatar18_2\\teatar18_2\\services\\sendmailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47D4AFBC-487A-4F3C-A4C9-3A62E4592364}|Teatar18_2\\Teatar18_2.csproj|solutionrelative:teatar18_2\\services\\sendmailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Korisnik.cs",
-              "DocumentMoniker": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Models\\Korisnik.cs",
-              "RelativeDocumentMoniker": "Teatar18_2\\Models\\Korisnik.cs",
-              "ToolTip": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Models\\Korisnik.cs",
-              "RelativeToolTip": "Teatar18_2\\Models\\Korisnik.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Title": "SendMailService.cs",
+              "DocumentMoniker": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Services\\SendMailService.cs",
+              "RelativeDocumentMoniker": "Teatar18_2\\Services\\SendMailService.cs",
+              "ToolTip": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Services\\SendMailService.cs",
+              "RelativeToolTip": "Teatar18_2\\Services\\SendMailService.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAswDIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T09:05:50.557Z",
+              "WhenOpened": "2024-06-10T11:54:50.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NewsletterController.cs",
               "DocumentMoniker": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\NewsletterController.cs",
               "RelativeDocumentMoniker": "Teatar18_2\\Controllers\\NewsletterController.cs",
               "ToolTip": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\NewsletterController.cs",
               "RelativeToolTip": "Teatar18_2\\Controllers\\NewsletterController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwBoAAAAJAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T09:02:12.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PitanjaController.cs",
               "DocumentMoniker": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\PitanjaController.cs",
               "RelativeDocumentMoniker": "Teatar18_2\\Controllers\\PitanjaController.cs",
               "ToolTip": "C:\\Users\\Korisnik\\ETF_LV\\OOAD\\Teatar18-grupa5-tim18\\Implementacija\\Teatar18_2\\Teatar18_2\\Controllers\\PitanjaController.cs",
               "RelativeToolTip": "Teatar18_2\\Controllers\\PitanjaController.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAswF4AAABDAAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAwwH8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T22:52:21.055Z",
               "EditorCaption": ""

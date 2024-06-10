@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Teatar18_2.Data;
 using Teatar18_2.Models;
 using Microsoft.AspNetCore.Authorization;
+using Teatar18_2.Services;
 
 namespace Teatar18_2.Controllers
 {
@@ -17,10 +18,12 @@ namespace Teatar18_2.Controllers
     public class PitanjaController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly SendMailService _sendMailService;
 
-        public PitanjaController(ApplicationDbContext context)
+        public PitanjaController(ApplicationDbContext context, SendMailService sendMailService)
         {
             _context = context;
+            _sendMailService = sendMailService; 
         }
 
         //Otvara pogled za postavljanje pitanja
@@ -86,13 +89,14 @@ namespace Teatar18_2.Controllers
 
             if (pitanje.IDKorisnika != null)
             {
-                SendEmail(pitanje.IDKorisnika.Email, "Odgovor na vaše pitanje", odgovor);
+                //SendEmail(pitanje.IDKorisnika.Email, "Odgovor na vaše pitanje", odgovor);
+                _sendMailService.SendEmail(pitanje.IDKorisnika.Email, "Odgovor na vaše pitanje", odgovor);
             }
 
             return RedirectToAction("OdgovaranjeNaPitanja");
         }
 
-        private void SendEmail(string toEmail, string subject, string body)
+        /*private void SendEmail(string toEmail, string subject, string body)
         {
             var fromEmail = "teatar18.5@gmail.com";
             //var fromPassword = "Teata5R18!OoaD";
@@ -130,6 +134,6 @@ namespace Teatar18_2.Controllers
                 // Handle exceptions (logging, etc.)
                 Console.WriteLine($"Exception caught in SendEmail(): {ex.Message}");
             }
-        }
+        }*/
     }
 }
