@@ -88,7 +88,7 @@ namespace Teatar18_2.Services
 
             await _context.SaveChangesAsync();
 
-            var body = "Vaša uplata za karte za predstavu je zaprimljena.\n" + "Predsatava: " + predstava.naziv + "\n" + "Termin: " + izvedba.vrijeme + "\n" + "Broj karata: " + rezervacija.brojKarata;
+            var body = "Vaša uplata za karte za predstavu je zaprimljena. " + "Predstava: " + predstava.naziv + ", " + "termin: " + izvedba.vrijeme + ", " + "broj karata: " + rezervacija.brojKarata;
 
 
             _sendMailService.SendEmail(user.Email, "Plaćanje rezervacije", body);
@@ -163,7 +163,7 @@ namespace Teatar18_2.Services
 
             await _context.SaveChangesAsync();
 
-            var body = "Vaša rezervacija je otkazana.\n" + "Predsatava: " + predstava.naziv + "\n" + "Termin: " + izvedba.vrijeme + "\n" + "Broj karata: " + rezervacija.brojKarata;
+            var body = "Vaša rezervacija je otkazana. " + "Predstava: " + predstava.naziv + ", " + "termin: " + izvedba.vrijeme + ", " + "broj karata: " + rezervacija.brojKarata;
 
             _context.Rezervacija.Remove(rezervacija);
             await _context.SaveChangesAsync();

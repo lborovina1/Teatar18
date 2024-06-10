@@ -4,6 +4,10 @@
     ViewData["Title"] = "Odgovaranje Na Pitanja";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
 <h2>Odgovaranje na pitanja</h2>
 
 @if (User.IsInRole("Zaposlenik") || User.IsInRole("Administrator"))
@@ -28,7 +32,7 @@
                         <form asp-action="OdgovaranjeNaPitanja" method="post">
                             <input type="hidden" name="pitanjeId" value="@pitanje.ID" />
                             <textarea name="odgovor" class="form-control" required></textarea>
-                            <input type="submit" value="Odgovori" class="btn btn-primary mt-2" />
+                            <input type="submit" value="Odgovori" class="btn btn-primary mt-2 my-button" />
                         </form>
                     </td>
                 </tr>
