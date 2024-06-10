@@ -7,16 +7,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Teatar18_2.Data;
 using Teatar18_2.Models;
+using Teatar18_2.Services;
 
 namespace Teatar18_2.Controllers
 {
     public class IzvedbaController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly SendMailService _sendMailService;
 
-        public IzvedbaController(ApplicationDbContext context)
+        public IzvedbaController(ApplicationDbContext context, SendMailService sendMailService)
         {
             _context = context;
+            _sendMailService = sendMailService;
         }
 
         // GET: Izvedba
@@ -215,6 +218,7 @@ namespace Teatar18_2.Controllers
             }
             await _context.SaveChangesAsync();
 
+            saljiNewsletter();
             ViewBag.Predstava = predstave;
             return View("IzmjenaRepertoara");
         }
@@ -236,6 +240,7 @@ namespace Teatar18_2.Controllers
                 }
                 await _context.SaveChangesAsync();
             }
+            //saljiNewsletter();
             return RedirectToAction("pregledRepertoara");
         }
 
@@ -261,6 +266,33 @@ namespace Teatar18_2.Controllers
             {
                 return StatusCode(500, "Internal server error: " + ex.Message);
             }
+        }
+
+        public IActionResult saljiNewsletter(string subject = "Novi repertoar", string message = "Na web stranici je postavljen repertoar za nadolazeći mjesec.\nPogledajte ga i rezervišite svoje karte na vrijeme.")
+        {
+            var subscribedUsers = _context.Korisnik.Where(k => k.newsletter).ToList();
+
+            if (!subscribedUsers.Any())
+            {
+                return Ok("Nema korniska koji su pretplaćeni na newsletter.");
+            }
+
+            var newsletter = new Newsletter
+            {
+                informacija = message,
+                datumSlanja = DateTime.Now
+            };
+
+            _context.Newsletter.Add(newsletter);
+            _context.SaveChanges();
+
+            foreach (var user in subscribedUsers)
+            {
+                //SendEmail(user.Email, subject, newsletter.informacija);
+                _sendMailService.SendEmail(user.Email, subject, newsletter.informacija);
+            }
+
+            return Ok("Emailovi su uspjesno poslani.");
         }
     }
 }
