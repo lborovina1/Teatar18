@@ -65,7 +65,9 @@ namespace Teatar18_2.Controllers
         [HttpPost]
         public IActionResult OdgovaranjeNaPitanja(int pitanjeId, string odgovor)
         {
-            var pitanje = _context.Pitanje.SingleOrDefault(p => p.ID == pitanjeId);
+            var pitanje = _context.Pitanje
+                .Include(p => p.IDKorisnika)
+                .SingleOrDefault(p => p.ID == pitanjeId);
 
             if (pitanje == null)
             {
@@ -78,6 +80,7 @@ namespace Teatar18_2.Controllers
             // IDZaposlenika je onaj od trenutno ulogovanog zaposlenika
             pitanje.IDZaposlenika = _context.Korisnik.SingleOrDefault(k => k.Email == User.Identity.Name);
 
+            _context.Update(pitanje);       
             _context.SaveChanges();
 
             if (pitanje.IDKorisnika != null)

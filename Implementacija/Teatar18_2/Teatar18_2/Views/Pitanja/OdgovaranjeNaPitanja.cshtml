@@ -5,35 +5,34 @@
 }
 
 <h2>Odgovaranje na pitanja</h2>
-<form asp-action="PostavljanjePitanja">
-    @if (User.Identity.IsAuthenticated)
-    {
-        <table class="table">
-            <thead>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Predmet</th>
+                <th>Sadrzaj</th>
+                <th>Datum Postavljanja</th>
+                <th>Odgovori</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pitanje in Model)
+            {
                 <tr>
-                    <th>Predmet</th>
-                    <th>Sadrzaj</th>
-                    <th>Datum Postavljanja</th>
-                    <th>Odgovori</th>
+                    <td>@pitanje.predmet</td>
+                    <td>@pitanje.sadrzaj</td>
+                    <td>@pitanje.datumPostavljanja</td>
+                    <td>
+                        <form asp-action="OdgovaranjeNaPitanja" method="post">
+                            <input type="hidden" name="pitanjeId" value="@pitanje.ID" />
+                            <textarea name="odgovor" class="form-control" required></textarea>
+                            <input type="submit" value="Odgovori" class="btn btn-primary mt-2" />
+                        </form>
+                    </td>
                 </tr>
-            </thead>
-            <tbody>
-                @foreach (var pitanje in Model)
-                {
-                    <tr>
-                        <td>@pitanje.predmet</td>
-                        <td>@pitanje.sadrzaj</td>
-                        <td>@pitanje.datumPostavljanja</td>
-                        <td>
-                            <form asp-action="OdgovaranjeNaPitanja" method="post">
-                                <input type="hidden" name="pitanjeId" value="@pitanje.ID" />
-                                <textarea name="odgovor" class="form-control" required></textarea>
-                                <input type="submit" value="Odgovori" class="btn btn-primary mt-2" />
-                            </form>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    }
-</form>
+            }
+        </tbody>
+    </table>
+}
