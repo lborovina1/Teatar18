@@ -106,7 +106,7 @@
 <body>
     <div class="header-container">
         <h2>Repertoar</h2>
-        @if (User.IsInRole("Zaposlenik") || User.IsInRole("Zaposlenik")) {
+        @if (User.IsInRole("Zaposlenik") || User.IsInRole("Administrator")) {
             <div class="button-container">
                 <a href="@Url.Action("izmjenaRepertoara", "Izvedba")">Izmijeni repertoar</a>
             </div>
