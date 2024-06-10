@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Teatar18_2.Models;
+using Teatar18_2.Services;
 
 namespace Teatar18_2.Areas.Identity.Pages.Account
 {
@@ -20,11 +21,13 @@ namespace Teatar18_2.Areas.Identity.Pages.Account
     {
         private readonly UserManager<Korisnik> _userManager;
         private readonly IEmailSender _sender;
+        private readonly SendMailService _sendEmailService;
 
-        public RegisterConfirmationModel(UserManager<Korisnik> userManager, IEmailSender sender)
+        public RegisterConfirmationModel(UserManager<Korisnik> userManager, IEmailSender sender, SendMailService sendEmailService)
         {
             _userManager = userManager;
             _sender = sender;
+            _sendEmailService = sendEmailService;
         }
 
         /// <summary>
@@ -61,7 +64,7 @@ namespace Teatar18_2.Areas.Identity.Pages.Account
 
             Email = email;
             // Once you add a real email sender, you should remove this code that lets you confirm the account
-            DisplayConfirmAccountLink = true;
+            /*DisplayConfirmAccountLink = true;
             if (DisplayConfirmAccountLink)
             {
                 var userId = await _userManager.GetUserIdAsync(user);
@@ -72,6 +75,20 @@ namespace Teatar18_2.Areas.Identity.Pages.Account
                     pageHandler: null,
                     values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                     protocol: Request.Scheme);
+            }*/
+            DisplayConfirmAccountLink = false;
+            if(! DisplayConfirmAccountLink)
+            {
+                var userId = await _userManager.GetUserIdAsync(user);
+                var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                EmailConfirmationUrl = Url.Page(
+                    "/Account/ConfirmEmail",
+                    pageHandler: null,
+                    values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
+                    protocol: Request.Scheme);
+                var body = $"<p><a href={EmailConfirmationUrl}>Kliknite ovdje </a> za potvrdu mail adrese.</p>"; ;
+                _sendEmailService.SendEmail(Email, "Teatar18 - Potvrda mail adrese", body);
             }
 
             return Page();

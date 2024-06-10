@@ -18,15 +18,18 @@ namespace Teatar18_2.Controllers
         private readonly ApplicationDbContext _context;
         private readonly UserManager<Korisnik> _userManager;
         private readonly RezervacijaService _rezervacijaService;
+        private readonly SendMailService _sendMailService;
 
         public RezervacijaController(
             ApplicationDbContext context,
             UserManager<Korisnik> userManager,
-            RezervacijaService rezervacijaService)
+            RezervacijaService rezervacijaService,
+            SendMailService sendMailService)
         {
             _context = context;
             _userManager = userManager;
             _rezervacijaService = rezervacijaService;
+            _sendMailService = sendMailService;
         }
 
         // GET: Rezervacija
