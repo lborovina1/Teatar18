@@ -52,12 +52,13 @@ namespace Teatar18_2.Controllers
         private void SendEmail(string toEmail, string subject, string body)
         {
             var fromEmail = "teatar18.5@gmail.com";
-            var fromPassword = "Teata5R18!OoaD";
+            //var fromPassword = "Teata5R18!OoaD";
+            var appPassword = "snlpwlgwwnbzudvc"; //snlp wlgw wnbz udvc
 
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential(fromEmail, fromPassword),
+                Credentials = new NetworkCredential(fromEmail, appPassword),
                 EnableSsl = true,
             };
 
