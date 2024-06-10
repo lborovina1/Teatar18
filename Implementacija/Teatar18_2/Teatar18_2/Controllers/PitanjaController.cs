@@ -55,6 +55,7 @@ namespace Teatar18_2.Controllers
 
         //generisanje pogleda za zaposlenika
         [HttpGet]
+        [Authorize(Roles = "Zaposlenik, Administrator")]
         public IActionResult OdgovaranjeNaPitanja()
         {
             var pitanja = _context.Pitanje.Where(p => !p.odgovoreno).ToList();

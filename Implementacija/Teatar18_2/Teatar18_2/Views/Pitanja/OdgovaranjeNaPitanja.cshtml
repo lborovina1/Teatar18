@@ -6,14 +6,14 @@
 
 <h2>Odgovaranje na pitanja</h2>
 
-@if (User.Identity.IsAuthenticated)
+@if (User.IsInRole("Zaposlenik") || User.IsInRole("Administrator"))
 {
     <table class="table">
         <thead>
             <tr>
                 <th>Predmet</th>
-                <th>Sadrzaj</th>
-                <th>Datum Postavljanja</th>
+                <th>Sadržaj</th>
+                <th>Datum postavljanja</th>
                 <th>Odgovori</th>
             </tr>
         </thead>
