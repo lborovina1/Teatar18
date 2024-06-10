@@ -23,6 +23,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<RezervacijaService>();
 builder.Services.AddScoped<PredstavaService>();
 builder.Services.AddScoped<OcjenaPredstaveService>();
+builder.Services.AddScoped<SendMailService>();
 
 var app = builder.Build();
 

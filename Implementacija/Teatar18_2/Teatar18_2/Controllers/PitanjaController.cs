@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Teatar18_2.Data;
 using Teatar18_2.Models;
 using Microsoft.AspNetCore.Authorization;
+using Teatar18_2.Services;
 
 namespace Teatar18_2.Controllers
 {
@@ -17,10 +18,12 @@ namespace Teatar18_2.Controllers
     public class PitanjaController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly SendMailService _sendMailService;
 
-        public PitanjaController(ApplicationDbContext context)
+        public PitanjaController(ApplicationDbContext context, SendMailService sendMailService)
         {
             _context = context;
+            _sendMailService = sendMailService; 
         }
 
         //Otvara pogled za postavljanje pitanja
@@ -86,21 +89,23 @@ namespace Teatar18_2.Controllers
 
             if (pitanje.IDKorisnika != null)
             {
-                SendEmail(pitanje.IDKorisnika.Email, "Odgovor na vaše pitanje", odgovor);
+                //SendEmail(pitanje.IDKorisnika.Email, "Odgovor na vaše pitanje", odgovor);
+                _sendMailService.SendEmail(pitanje.IDKorisnika.Email, "Odgovor na vaše pitanje", odgovor);
             }
 
             return RedirectToAction("OdgovaranjeNaPitanja");
         }
 
-        private void SendEmail(string toEmail, string subject, string body)
+        /*private void SendEmail(string toEmail, string subject, string body)
         {
             var fromEmail = "teatar18.5@gmail.com";
-            var fromPassword = "Teata5R18!OoaD";
+            //var fromPassword = "Teata5R18!OoaD";
+            var appPassword = "snlpwlgwwnbzudvc"; //snlp wlgw wnbz udvc
 
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential(fromEmail, fromPassword),
+                Credentials = new NetworkCredential(fromEmail, appPassword),
                 EnableSsl = true,
             };
 
@@ -117,12 +122,18 @@ namespace Teatar18_2.Controllers
             try
             {
                 smtpClient.Send(mailMessage);
+                Console.WriteLine("Email uspjesno poslan.");
+            }
+            catch (SmtpException smtpEx)
+            {
+                // Handle SMTP specific exceptions
+                Console.WriteLine($"SMTP Exception caught in SendEmail(): {smtpEx.Message}");
             }
             catch (Exception ex)
             {
                 // Handle exceptions (logging, etc.)
-                Console.WriteLine($"Exception caught in SendEmail(): {ex}");
+                Console.WriteLine($"Exception caught in SendEmail(): {ex.Message}");
             }
-        }
+        }*/
     }
 }
