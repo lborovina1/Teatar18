@@ -1,6 +1,4 @@
-﻿@model IEnumerable<Teatar18_2.Models.Predstava>
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,6 +10,9 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .header {
@@ -40,12 +41,13 @@
                 height: auto;
             }
 
-            .play-card h3, .play-card p {
+            .play-card h3,
+            .play-card p {
                 margin: 10px 0;
             }
 
         .scrollable-content {
-            height: calc(100vh - 100px);
+            flex: 1;
             overflow-y: auto;
         }
 
@@ -56,7 +58,7 @@
         .repertoire {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; 
+            justify-content: center;
         }
 
         .play-card a {
@@ -68,12 +70,49 @@
                 text-decoration: none;
                 color: black;
             }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+            .header-container h2 {
+                margin: 0;
+            }
+
+        .button-container {
+            text-align: center;
+        }
+
+            .button-container a {
+                text-decoration: none;
+                border-color: #a30808;
+                padding: 10px 20px;
+                color: white;
+                background-color: #a30808;
+                border: none;
+                font-size: 16px;
+            }
+
+                .button-container a:hover {
+                    background-color: #660000;
+                }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <h2>Repertoar</h2>
-    <center>
+    <div class="header-container">
+        <h2>Repertoar</h2>
+        @if (User.IsInRole("Zaposlenik") || User.IsInRole("Zaposlenik")) {
+            <div class="button-container">
+                <a href="@Url.Action("izmjenaRepertoara", "Izvedba")">Izmijeni repertoar</a>
+            </div>
+        }
+    </div>
+    <div class="scrollable-content">
         <div class="container">
             <div class="repertoire">
                 @foreach (var predstava in Model)
@@ -107,9 +146,10 @@
                 }
             </div>
         </div>
-    </center>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
+    </div>
+    <br />
+    <br />
+    <br />
 </body>
+
 </html>
