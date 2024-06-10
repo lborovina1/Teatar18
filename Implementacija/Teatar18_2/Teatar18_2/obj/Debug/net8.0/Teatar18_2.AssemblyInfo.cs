@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Teatar18_2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63377080cc624e23624a253ee4afb6d1306804ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f891ca9dd3c48d1a0a3b1e155a326cff69e9f232")]
 [assembly: System.Reflection.AssemblyProductAttribute("Teatar18_2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Teatar18_2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
