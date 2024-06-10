@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -13,6 +14,7 @@ using static Teatar18_2.Areas.Identity.Pages.Account.Manage.KupovinaModel;
 
 namespace Teatar18_2.Controllers
 {
+    [Authorize]
     public class RezervacijaController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -30,6 +32,7 @@ namespace Teatar18_2.Controllers
         }
 
         // GET: Rezervacija
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Index()
         {
             var rezervacije = await _context.Rezervacija
@@ -140,6 +143,7 @@ namespace Teatar18_2.Controllers
         }
 
         // GET: Rezervacija/Edit/5 
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Edit(int? id)      //za placanje uzivo
         {
             if (id == null)
@@ -159,6 +163,7 @@ namespace Teatar18_2.Controllers
         // POST: Rezervacija/Edit/5 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Edit(int id, [Bind("ID,IDIzvedbe,kupovina,brojKarata,popust,aktivna")] Rezervacija rezervacija)
         {
             if (id != rezervacija.ID)
@@ -180,6 +185,7 @@ namespace Teatar18_2.Controllers
         }
 
         // GET: Rezervacija/Delete/5
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> OtkaziRezervaciju(int? id)
         {
             if (id == null)
@@ -202,6 +208,7 @@ namespace Teatar18_2.Controllers
         // POST: Rezervacija/Delete/5 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> OtkaziRezervacijuConfirmed(int id)
         {
             if (await _rezervacijaService.OtkaziRezervaciju(id))
@@ -254,6 +261,7 @@ namespace Teatar18_2.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> OtkaziNeplaceneRezervacije()
         {
             if (await _rezervacijaService.OtkaziNeplaceneRezervacije())

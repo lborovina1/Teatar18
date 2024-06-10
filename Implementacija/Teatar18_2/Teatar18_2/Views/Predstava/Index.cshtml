@@ -6,41 +6,45 @@
 
 <h1>Index</h1>
 
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="my-red-link">Dodaj novu predstavu</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.naziv)
+                Naziv
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.glumci)
+                Glumci
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.scenaristi)
+                Scenaristi
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.reziseri)
+                Režiseri
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.scenografi)
+                Scenografi
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.zanr)
+                Žanr
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.opis)
+                Opis
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.poster)
+                Poster
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.trajanje)
+                Trajanje
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.uRepertoaru)
+                U repertoaru
             </th>
             <th></th>
         </tr>
@@ -79,9 +83,9 @@
                 @Html.DisplayFor(modelItem => item.uRepertoaru)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.ID" class="my-red-link">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID" class="my-red-link">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID" class="my-red-link">Delete</a>
             </td>
         </tr>
 }

@@ -29,7 +29,7 @@ namespace Teatar18_2.Controllers
 
             if (!subscribedUsers.Any())
             {
-                return Ok("Nema korniska koji su pretplaceni na newsletter.");
+                return Ok("Nema korisnika koji su pretplaćeni na newsletter.");
             }
 
             var newsletter = new Newsletter
@@ -46,7 +46,7 @@ namespace Teatar18_2.Controllers
                 SendEmail(user.Email, subject, newsletter.informacija);
             }
 
-            return Ok("Emailovi su uspjesno poslani.");
+            return Ok("Emailovi su uspješno poslani.");
         }
 
         private void SendEmail(string toEmail, string subject, string body)

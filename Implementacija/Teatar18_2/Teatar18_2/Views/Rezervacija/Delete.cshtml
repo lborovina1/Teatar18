@@ -4,6 +4,10 @@
     ViewData["Title"] = "Otkazivanje rezervacije";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
 <h3>Jeste li sigurni da želite otkazati ovu rezervaciju?</h3>
 
 <div>
@@ -25,7 +29,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="ID" />
-        <input type="submit" value="Otkaži" class="btn btn-danger" /> |
-        <a asp-action="Index">Povratak na listu</a>
+        <input type="submit" value="Otkaži" class="btn btn-danger my-button" /> |
+        <a asp-action="Index" class="my-link">Povratak na listu</a>
     </form>
 </div>

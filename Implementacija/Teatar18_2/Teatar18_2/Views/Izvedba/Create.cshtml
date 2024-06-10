@@ -4,6 +4,10 @@
     ViewData["Title"] = "Create";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
 <h1>Create</h1>
 
 <h4>Izvedba</h4>
@@ -13,7 +17,7 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="IDPredstave" class="control-label"></label>
+                <label asp-for="IDPredstave" class="control-label">Predstava</label>
                 <select asp-for="IDPredstave" class ="form-control" asp-items="ViewBag.IDPredstave"></select>
             </div>
             <div class="form-group">
@@ -57,15 +61,17 @@
                 </select>
                 <span asp-validation-for="brojSlobodnihKarata" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary my-button" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <br />
+    <a asp-action="Index" class="my-link">Povratak na listu</a>
 </div>
 
 @section Scripts {

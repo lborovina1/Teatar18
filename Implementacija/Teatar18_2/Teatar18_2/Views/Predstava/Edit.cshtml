@@ -4,6 +4,10 @@
     ViewData["Title"] = "Edit";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
 <h1>Edit</h1>
 
 <h4>Predstava</h4>
@@ -14,64 +18,67 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ID" />
             <div class="form-group">
-                <label asp-for="naziv" class="control-label"></label>
+                <label asp-for="naziv" class="control-label">Naziv</label>
                 <input asp-for="naziv" class="form-control" />
                 <span asp-validation-for="naziv" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="glumci" class="control-label"></label>
+                <label asp-for="glumci" class="control-label">Glumci</label>
                 <input asp-for="glumci" class="form-control" />
                 <span asp-validation-for="glumci" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="scenaristi" class="control-label"></label>
+                <label asp-for="scenaristi" class="control-label">Scenaristi</label>
                 <input asp-for="scenaristi" class="form-control" />
                 <span asp-validation-for="scenaristi" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="reziseri" class="control-label"></label>
+                <label asp-for="reziseri" class="control-label">Režiseri</label>
                 <input asp-for="reziseri" class="form-control" />
                 <span asp-validation-for="reziseri" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="scenografi" class="control-label"></label>
+                <label asp-for="scenografi" class="control-label">Scenografi</label>
                 <input asp-for="scenografi" class="form-control" />
                 <span asp-validation-for="scenografi" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="zanr" class="control-label"></label>
+                <label asp-for="zanr" class="control-label">Žanr</label>
                 <select asp-for="zanr" class="form-control" asp-items="Html.GetEnumSelectList<Zanr>()"></select>
                 <span asp-validation-for="zanr" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="opis" class="control-label"></label>
+                <label asp-for="opis" class="control-label">Opis</label>
                 <input asp-for="opis" class="form-control" />
                 <span asp-validation-for="opis" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="poster" class="control-label"></label>
+                <label asp-for="poster" class="control-label">Poster</label>
                 <input asp-for="poster" class="form-control" />
                 <span asp-validation-for="poster" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="trajanje" class="control-label"></label>
+                <label asp-for="trajanje" class="control-label">Trajanje</label>
                 <input asp-for="trajanje" class="form-control" />
                 <span asp-validation-for="trajanje" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
+                <br />
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="uRepertoaru" /> @Html.DisplayNameFor(model => model.uRepertoaru)
+                    <input class="form-check-input" asp-for="uRepertoaru" /> U repertoaru
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <br />
+                <input type="submit" value="Save" class="btn btn-primary my-button" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <br />
+    <a asp-action="Index" class="my-link">Povratak na listu</a>
 </div>
 
 @section Scripts {

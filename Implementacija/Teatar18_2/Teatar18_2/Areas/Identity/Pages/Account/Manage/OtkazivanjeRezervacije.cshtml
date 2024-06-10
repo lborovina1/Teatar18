@@ -6,6 +6,10 @@
     ViewData["ActivePage"] = ManageNavPages.OtkazivanjeRezervacije;
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
 <h3>Jeste li sigurni da želite otkazati ovu rezervaciju?</h3>
 
 <partial name="_StatusMessage" for="StatusMessage" />
@@ -28,7 +32,7 @@
         </dl>
             
         <div>
-            <button type="submit" class="btn btn-danger">Otkaži</button>
+            <button type="submit" class="btn btn-danger my-button-smaller">Otkaži</button>
         </div>
     </div>
 </form>

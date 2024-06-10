@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,13 +21,45 @@ namespace Teatar18_2.Controllers
             _context = context;
         }
 
-        // GET: Predstava
+        private string TruncateByWords(string text, int wordLimit)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                return text;
+
+            var words = text.Split(' ');
+            if (words.Length <= wordLimit)
+                return text;
+
+            return string.Join(" ", words.Take(wordLimit)) + "...";
+        }
+
+        // GET: Izvedba
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Predstava.ToListAsync());
+            var applicationDbContext = await _context.Predstava
+                                                      .ToListAsync();
+
+            var model = applicationDbContext.Select(i => new Predstava
+            {
+                ID = i.ID,
+                naziv = i.naziv,
+                glumci = i.glumci,
+                scenaristi = i.scenaristi,
+                reziseri = i.reziseri,
+                scenografi = i.scenografi,
+                zanr = i.zanr,
+                opis = TruncateByWords(i.opis, 20),
+                poster = i.poster,
+                trajanje = i.trajanje,
+                uRepertoaru = i.uRepertoaru
+            }).ToList();
+
+            return View("Index", model);
         }
 
         // GET: Predstava/Details/5
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -45,6 +78,7 @@ namespace Teatar18_2.Controllers
         }
 
         // GET: Predstava/Create
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public IActionResult Create()
         {
             return View();
@@ -67,6 +101,7 @@ namespace Teatar18_2.Controllers
         }
 
         // GET: Predstava/Edit/5
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -87,6 +122,7 @@ namespace Teatar18_2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Edit(int id, [Bind("ID,naziv,glumci,scenaristi,reziseri,scenografi,zanr,opis,poster,trajanje,uRepertoaru")] Predstava predstava)
         {
             if (id != predstava.ID)
@@ -118,6 +154,7 @@ namespace Teatar18_2.Controllers
         }
 
         // GET: Predstava/Delete/5
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -138,6 +175,7 @@ namespace Teatar18_2.Controllers
         // POST: Predstava/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var predstava = await _context.Predstava.FindAsync(id);
@@ -169,7 +207,7 @@ namespace Teatar18_2.Controllers
             }
             
             double prosjecnaOcjena = ocjene.Average();
-            return prosjecnaOcjena;
+            return Math.Round(prosjecnaOcjena, 2);
         }
 
         // Poziva se iz HomeControllera za prikaz preporuka na home page-u
@@ -195,12 +233,19 @@ namespace Teatar18_2.Controllers
 
         public async Task<IActionResult> Rezervisi(int predstavaID)
         {
-            var izvedbe = await _context.Izvedba
-                .Where(i => i.IDPredstave == predstavaID && i.vrijeme > DateTime.Now)
-                .OrderBy(i => i.vrijeme)
-                .ToListAsync();
+            if (User.IsInRole("Korisnik"))
+            {
+                var izvedbe = await _context.Izvedba
+                    .Where(i => i.IDPredstave == predstavaID && i.vrijeme > DateTime.Now)
+                    .OrderBy(i => i.vrijeme)
+                    .ToListAsync();
 
-            return View(izvedbe);
+                return View(izvedbe);
+            }
+            else
+            {
+                return RedirectToPage("/Account/Login", new { area = "Identity" });
+            }
         }
     }
 }

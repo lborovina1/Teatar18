@@ -6,10 +6,15 @@
 
 <h1>@ViewData["Title"]</h1>
 
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
 <div>
     <form asp-action="OtkaziNeplaceneRezervacije" method="post">
-        <button type="submit" class="btn btn-primary">Otkaži neplaćene rezervacije</button>
+        <button type="submit" class="btn btn-primary my-button-smaller">Otkaži neplaćene rezervacije</button>
     </form>
+    <br />
 </div>
 
 <table class="table">
@@ -60,8 +65,8 @@
             @if(item.aktivna && item.kupovina == false)
             {
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.ID">Postavi plaćeno</a> |
-                    <a asp-action="OtkaziRezervaciju" asp-route-id="@item.ID">Otkaži</a>
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="my-red-link">Postavi plaćeno</a> |
+                    <a asp-action="OtkaziRezervaciju" asp-route-id="@item.ID" class="my-red-link">Otkaži</a>
                 </td>
             }   
         </tr>

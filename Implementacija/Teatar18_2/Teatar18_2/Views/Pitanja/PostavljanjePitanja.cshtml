@@ -4,6 +4,10 @@
     ViewData["Title"] = "Postavljanje Pitanja";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
 <h2>Postavljanje pitanja</h2>
 
 <form asp-action="PostavljanjePitanja">
@@ -18,6 +22,6 @@
             <textarea asp-for="sadrzaj" class="form-control"></textarea>
         </div>
         <br />
-        <input type="submit" value="Postavi pitanje" class="btn btn-primary" />
+        <input type="submit" value="Postavi pitanje" class="btn btn-primary my-button" />
     }
 </form>

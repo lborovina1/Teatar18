@@ -4,6 +4,10 @@
     ViewData["Title"] = "Plaćanje uživo";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
 <h3>@ViewData["Title"]</h3>
 <hr />
 <div class="row">
@@ -23,14 +27,15 @@
             </div>
             <br>
             <div class="form-group">
-                <input type="submit" value="Spasi" class="btn btn-primary" >
+                <input type="submit" value="Spasi" class="btn btn-primary my-button" >
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Povratak na listu</a>
+    <br />
+    <a asp-action="Index" class="my-link">Povratak na listu</a>
 </div>
 
 @section Scripts {

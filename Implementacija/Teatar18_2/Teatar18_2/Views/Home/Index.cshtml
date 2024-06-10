@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teatar18</title>
+    <link rel="stylesheet" href="~/css/site.css" />
     <style>
        
 
@@ -63,25 +64,17 @@
         .repertoar_button {
             width: 100%;
             text-align: center;
-            margin-top: 2rem;
+            margin-top: 25px;
         }
 
-            .repertoar_button button {
-                padding: 10px 20px;
-                background-color: #a10000;
-                color: white;
-                border: none;
-                border-radius: 15px;
-                cursor: pointer;
-                font-size: 20px;
-            }
-
-        .repertoar-button button:hover {
-            background-color: #800000;
+        .repertoar_buttonbutton {
+            font-size: 23px;
         }
     </style>
 </head>
 <body>
+    <h2>Naše preporuke</h2>
+
     <div class="header">
     </div>
     <div class="container">
@@ -96,7 +89,7 @@
         }
     </div>
     <div class="repertoar_button">
-        <button>
+        <button class="my-button repertoar_buttonbutton">
             <a class="nav-link text-light" asp-area="" asp-controller="Izvedba" asp-action="pregledRepertoara">Repertoar</a>
         </button>
     </div>
